@@ -83,21 +83,65 @@ straight TWO/OLD/KIDS in top-to-bottom order plus unique T9 THE and RIGHT” onl
 self-check, the chain is overwhelmingly structural rather than a word-search
 coincidence.
 
-## Candidate final extraction (not live-tested)
+## Stronger repo-only reading: answer-word layers
 
-The opening verse of *The Right Stuff* explicitly enumerates first, second,
-and third times. The changing result words are:
+The string made by the path plus its missing-file letters is naturally read as
+**PIC DIGIT — WORD TWO**. That suggests taking the second word initial from
+each picture label. The independently recovered `NTH` says to generalize this
+to the Nth word for answer word N.
 
-- first time: **great**
-- second time: **blast**
-- third time: **love**
+Use these established labels:
 
-This gives the strongest current password candidate:
+1. Personal Jesus
+2. La Isla Bonita
+3. Papa Don't Preach
+4. Drake
+5. Wiz Khalifa
+6. I Just Called to Say I Love You
+7. Ghostbusters
+8. Orianthi
+9. Dan Reynolds
 
-`great blast love`
+A one-word label keeps its only initial; a longer label contributes its Nth
+word when it has one. The three letter layers begin:
 
-No live request or submission was made. Remaining caution: a mechanical
-line-final reading would be `time blast love`; the changing-result reading is
-preferred because repeated `time` is scaffolding, while GREAT / BLAST / LOVE
-are the three semantic payloads. This final choice is the only unresolved
-micro-ambiguity in an otherwise deterministic chain.
+- word 1: `1=P,2=L,3=P,4=D,5=W,6=I,7=G,8=O,9=D`
+- word 2: `1=J,2=I,3=D,4=D,5=K,6=J,7=G,8=O,9=R`
+- word 3: `2=B,3=P,4=D,6=C,7=G,8=O` (other multiword labels are blank)
+
+Touching-cell paths then give:
+
+- **WIDOW** (word-1 layer): digits `56485`,
+  `R4C2 → R5C1 → R6C2 → R6C1 → R5C2`
+- **DROID** (word-2 layer): digits `39823`,
+  `R4C7 → R3C6 → R3C7 → R2C6 → R1C5`
+- **COP** (word-3 layer): digits `683`,
+  `R1C2 → R2C1 → R3C2`
+
+Each has exactly one path. WIDOW is the only ordinary-English maximum-length
+word in layer 1 (`Diplo` is a proper name), and DROID is the sole length-5 word
+in layer 2. In sparse layer 3, COP is the most frequent everyday word having
+one path; more frequent GOD/DOG/ODD and near-peer DOC/COD repeat. A 500,000
+histogram-preserving random-grid control reproduced all three exact unique
+paths only 170 times (0.034%). Combined with the independently rare unique
+`PICDIGITWORD` instruction, this is the strongest repo-only answer mechanism
+found so far.
+
+### Current leading candidate
+
+`widow droid cop`
+
+No live request or submission was made.
+
+### Exact remaining caution
+
+Layer 3 also has less-common one-path words such as COB and BOD, so **COP is
+strongly salient but not selected by a purely formal longest-word rule**.
+Also, retaining the sole initial of a one-word label (Orianthi) in later layers
+is natural but implicit. Those are now the only substantive blockers to calling
+the candidate mathematically unique.
+
+The previous *The Right Stuff* lyric candidate `great blast love` is downgraded:
+it requires an external lyric lookup and an arbitrary choice between GREAT and
+the line-final TIME. The `widow droid cop` route stays within the repository's
+picture labels and directly obeys `PIC DIGIT WORD TWO` plus `NTH`.
