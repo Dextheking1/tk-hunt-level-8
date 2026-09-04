@@ -319,3 +319,16 @@ DEICED 3, DEIFIED 4, DEFACE/EDIFICE 5.
 1987-02-25 -> (19,87,02,25) mod42 = cells give IDFE (0-based) / EFFI
 (1-based). 2016-12-19 -> HIBI / IDPJ. No words either indexing. The
 Personal-Jesus file dates carry no grid selection.
+
+## Coordinate splits falsified (2026-09-04, reverse-geocoded)
+Row pairs as DD.DDDDD + D[D].DDDDDD: (46.64316,8.591725) = Gotthardstrasse,
+Andermatt, Switzerland; (23.96598,15.39513) = Murzuq, Libya; (65.13475,
+84.61849) = Turukhansky, Siberia. Three random remote spots, zero connection
+to Utah/music/Kracken/artists' origins. Splits arbitrary anyway. DEAD.
+what3words rejected outright (operator: passwords are 3 unconnected random
+English words, not addresses).
+## Fable transcript intake (2026-09-04)
+Row/col T9-separator segment lists match repo exactly (cross-validated).
+Knight DICE opener + spiral/diceware/mosaic claims already falsified here.
+No new payloads. Open leads still Only: Level 0 hint page, TOOL page, /qa,
+L6 grid calibration (all need live-site reads, awaiting operator OK).
