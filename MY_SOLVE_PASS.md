@@ -52,6 +52,40 @@ anything and did not touch the live gate.
   wonder, ijustcalled, depechemode, violation/injection/election, plus spaced
   and apostrophe variants): 224 attempts, 0 hits. Steganography is closed.
 
+## Addendum 2: layer-4 forensics closure (personally verified)
+- grid.png chunk walk: IHDR / eXIf(62220) / 9xIDAT / IEND, then appended ZIP.
+  No other chunks. Nothing else to carve.
+- image01.png: IHDR / tEXt(Artist, 20141) / iTXt(437) / 2xIDAT / IEND. The
+  iTXt chunk dumped in full: keyword `XML:com.adobe.xmp`, content is ONLY the
+  XMP packet with `dc:date 1987-02-25` (La Isla Bonita release). No payload.
+- eXIf TIFF walked IFD by IFD: IFD0 = X/YResolution + ResolutionUnit +
+  YCbCrPositioning; IFD1 = Compression(6=JPEG) + resolutions + JPEG offset
+  172 / length 62047. No ImageDescription/Artist/EXIF-subIFD/GPS/second image.
+  The chunk is fully accounted for.
+- All 9 JPEGs (6 ZIP + 3 nested): EOI at EOF-2, zero trailing bytes, no COM
+  segments, no nonstandard APPn. Terminal, every one.
+- ZIP: entries in numeric order, no comments, stock 24-byte UT/ux extras.
+  Only anomaly: image01.png stamped 2s after the other five (assembly order,
+  consistent with it carrying the Artist payload). No signal.
+- CONCLUSION: the forensics chain is closed. There is no layer 4. Every
+  extractable byte has been extracted; every cover answer tried is dead.
+
+## Addendum 3: multi-tool carrier sweep (2026-09-04)
+- `steghide info image04.jpg -p ""` reports the embedded file's TRUE name:
+  **`image11.jpg`** (47.7 KB, rijndael-128/CBC, compressed). Re-extraction
+  hash-matches steg04.jpg (7643d732...). So missing slot 11 = the Stevie
+  cover itself; still missing: 03, 05, 08, 09, 10. (One payload per carrier;
+  image04 holds nothing else via steghide.)
+- outguess (now found at /usr/bin/outguess): nokey "extraction" from
+  image04 (45,864 B) and image07 (8,869 B) PROVEN FALSE POSITIVE — outputs
+  are ~8.0-entropy noise, wrong keys change the output length, and a fresh
+  synthetic PIL JPEG "extracts" 37 KB too. No outguess payload anywhere.
+  (`/usr/local/bin/jsteg` is a saved HTML page, i.e. broken install.)
+- stegseek 0.6 + 167-word targeted list (covers, lyrics, hunt words, numbers,
+  filenames, classics) on image02/06/07/12: no passphrase on any. Capacities
+  remain (02: 23.6 KB, 07: 55.6 KB, 12: 9.1 KB, 06: 540 B) but no key found;
+  rockyou-scale brute force not available offline.
+
 ## Review: PIC_DIGIT / NKOTB / `widow droid cop` (requested, repo-only)
 - Raw path facts verified: the PICDIGITWORD digit string, its 12-cell
   adjacency chain, and the TWO/OLD/KIDS/THE/RIGHT digit paths all check out
