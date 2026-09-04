@@ -305,3 +305,17 @@ Falsified under this framing: year-paths (1984/86/87/89/2018 as
 touching-cell paths all fail). MAD WORLD stays downgraded (WORLD needs the
 unsupported 7/6 swap). Open: what the traversal SELECTS (Boggle alone gives
 hundreds of words; still needs a pick-3 rule).
+
+## Boggle-unique-paths correction (2026-09-04, verified by exhaustive DFS)
+Claim was "only 3 long Boggle words with unique paths (beached/acacia/
+cicada)". Full count over the 20 known len6+ A-I words: unique paths also
+for CHAFED, DECIDE, GAFFED (1 each). So SIX unique-path words, not three;
+the triple is cherry-picked and its order (not alphabetical, not reading,
+not length) is unprincipled. NOT recommended.
+Counts: ACACIA 1, BEACHED 1, CHAFED 1, CICADA 1, DECIDE 1, GAFFED 1,
+ACHEBE/CADDIE/CADGED/DECADE/DIFFED/EDIFIED/FACADE 2, CICADAE/DEFACED/
+DEICED 3, DEIFIED 4, DEFACE/EDIFICE 5.
+## Dates-as-mod42-coords (2026-09-04): dead
+1987-02-25 -> (19,87,02,25) mod42 = cells give IDFE (0-based) / EFFI
+(1-based). 2016-12-19 -> HIBI / IDPJ. No words either indexing. The
+Personal-Jesus file dates carry no grid selection.
