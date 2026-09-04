@@ -96,3 +96,13 @@ which breaks decoding under the puzzle's own mapping, so the author (working
 in T9, where 1 maps to nothing) could never have planted them. Proof: the
 1=I theory yields 7 plants for a 3-word password (diverges); pure-T9 theory
 converges to exactly 3 after name exclusion.
+
+## Submit log
+- 2026-09-04 ~07:00 UTC: `homie smelt tills` (reading order) -> INVALID.
+  Triple {HOMIE,SMELT,TILLS} kept (name-exclusion of KELLI); order suspect.
+  Next: `homie tills smelt` (end-cell reading order).
+- Intel: tk-clues official rules (Kracken 8/30): "Letters and numbers are
+  fair game. Nothing is case-sensitive. Punctuation matters. Try not to
+  overthink it." No official L8 hint exists. tk-lvl-8 chat: waffle jokes,
+  unexplained "video" confusion, "are you Kyle Wood" (KYLE is grid noise,
+  len-4 diag). tk-lvl-9: only "First" claim (WifeElect, Sep 3), no mechanism.
