@@ -270,3 +270,27 @@ Queue: i-love-you > i-just-called > curly-Papa > noapos-Papa > isla.
 - Years (1984/86/87/89/2018) as touching-cell paths: tested, all fail.
 - MAD WORLD downgraded independently (WORLD needs unsupported swap).
 - No new payloads; inventory matches repo.
+
+## Notion-agent intake 2 (2026-09-04): decisive constraints + new leads
+- DISTINCT-LETTER PROOF: L6 (necklace popcorn love) and L7 (ducks pump
+  premium) each use 10 distinct letters. One digit (1-9) carries <=9 values,
+  so one-digit-to-one-letter schemes (A1Z26/Caesar/QWERTY/Atbash/note-names)
+  are IMPOSSIBLE as a class. T9/multi-letter cells survive (draw from 26).
+- PLURALS KILL WORDLISTS: "ducks" absent from BIP-39/EFF-large/EFF-short/
+  Diceware (all exclude plurals by design). Author uses no curated list;
+  digits do NOT index into a wordlist.
+- House format (operator-confirmed): 3 UNCONNECTED common English words
+  (cf necklace/popcorn/love, ducks/pump/premium). Phrases/titles excluded
+  as answers (kills Papa/Isla/I-love-you as literal answers).
+- Title hyperlink = "Fun Facts About Bananas" joke video (placeholder).
+  Conceal/Reveal = stock Wix menu animation. Site bg = Gird_Background.jpg.
+  Page has no instructions (title + grid + "." + Submit only).
+- Guitar-tab (all tunings), Nashville/jianpu (all keys), digit-index into
+  artist/song titles (rows+cols, both offsets), all-names-concat 2-digit
+  tokens (both dirs), Connect-Four lines (none exist): ALL DEAD (verified).
+- what3words hypothesis (3 uncorrelated incl plurals = w3w address shape):
+  grid would have to encode a location; images have no GPS (stub only).
+  UNTESTED (needs w3w list/API).
+- LEADS (need live-site reads, NOT yet authorized): Level 0 page (admin-
+  confirmed hint for later levels), TOOL page (possible author decoder),
+  /qa page, Level 6 grid image (known-plaintext calibration vs known answer).
