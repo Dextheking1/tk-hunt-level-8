@@ -33,3 +33,31 @@ would justify a separately preregistered seed-preimage attack; it does not by
 itself authorize any password expansion or answer candidate.
 
 No live-site request or submission is involved.
+
+## Attempt A result: libc `srand` is not the path
+
+The preload shim built and all eight synthetic embeddings completed, but no
+call to libc `srand` occurred for any registered passphrase or either cover.
+The script therefore stopped before its StegSeek control. This is an
+instrumentation null result, not a password-family result: steghide's normal
+`/dev/urandom`/libmhash path does not expose the embedding selector through
+libc `srand`.
+
+## Preregistered follow-up B: trace the dynamically linked libmhash path
+
+Before running it, replace only the failed observation layer as follows:
+
+1. Preload wrappers for the imported `mhash_init`, `mhash`, and
+   `mhash_deinit` functions. Record the hash algorithm id, exact input byte
+   lengths/bytes, and final digest while forwarding all calls unchanged.
+2. Use the same seven fixed passphrases, fixed payload, and two-cover `planet`
+   repeat listed above.
+3. Complete StegSeek seed mode on the first `planet` carrier and compare that
+   reported seed with only the digest-window/endian transforms already frozen
+   above.
+4. Require identical libmhash traces for `planet` across both covers before
+   calling the mapping password-dependent.
+
+If no passphrase-bearing hash/digest can be observed, or no frozen transform
+matches the StegSeek seed, this follow-up is killed; no extra hash formula is
+introduced post hoc.
