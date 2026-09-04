@@ -243,3 +243,20 @@ Queue: i-love-you > i-just-called > curly-Papa > noapos-Papa > isla.
 - MAD/WORLD caution: WORLD needs unevidenced 7/6 swap at (1,4)/(2,3)
   (glyphs confirmed as-is); without swap it's WROD (nonsense). Outer
   initials MDWROD + placed-A = sharpshooter. Downgraded.
+
+## Swarm transcript intake (2026-09-04): spiral/diceware/knight/mosaic dead
+- Spiral A1Z26 string verified exact (DFFDCAF...FEEIC). Hits with system
+  dict: CW CAFE/FEE (+EEC junk; FAB absent from dict), CCW ICE/DIE/CHEF
+  (+CHE/FAHD junk). Random 42-perm background averages 5.25 hits vs our
+  3-5: AT CHANCE. "Exactly 3" needs a curated wordlist. REJECTED.
+- Diceware mappings verified in EFF-large (46643 reexamine, 16512 concrete,
+  52365 rope, 16535 confiding, 41646 napping). REJECTED anyway: arbitrary
+  "first 15 rolls" cutoff (remaining 16 valid dice ignored), and EFF-large
+  lacks necklace/love/ducks/pump so it contradicts the hunt wordlist.
+- Knight's-tour DICE opener verified as existing path (0,0)->(1,2)->(0,4)->
+  (1,6)->(3,5)->(5,6)->(4,4)->(3,2) = DICEAIDC, but flexible knight paths can
+  open with almost any short word: apophenia. REJECTED.
+- Mosaic (digits 1-9 -> 9 thumbnails) unmappable: relayed digit->image
+  assignments incoherent, no principled alternative. PARKED.
+- OPERATIONAL: submissions are FREE, 1/minute, case-insensitive;
+  spaces+spelling matter. (Relaxes earlier strike-fear; queue viable.)
