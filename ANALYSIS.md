@@ -332,3 +332,23 @@ Row/col T9-separator segment lists match repo exactly (cross-validated).
 Knight DICE opener + spiral/diceware/mosaic claims already falsified here.
 No new payloads. Open leads still Only: Level 0 hint page, TOOL page, /qa,
 L6 grid calibration (all need live-site reads, awaiting operator OK).
+
+## Fable round 2 intake (2026-09-04, verified by code)
+- Straight-line T9 search (8 dirs) for ALL image-derived words (artists,
+  titles, phone-theme: hotline/bling/payphone/call/touch/reach/faith/
+  receiver/believer/ghost/isla/papa/preach/madonna/stevie/depeche...):
+  only LA (x4) and UP (x1). Images are NOT a word-search key. DEAD.
+- Filename numbers as cell selectors: cells 1,2,4,6,7,12 (row-major) =
+  4,6,4,1,6,7; as column picks per row = junk. DEAD.
+- Theme-word Boggle presence (king-move): hotline(1=i) 1, bling 3, dial 4,
+  wire 3, line 1, key 10 -- all at chance for a 42-cell grid. Not evidence.
+- Digit histogram: 1:6 2:2 3:5 4:5 5:7 6:6 7:2 8:4 9:5 (no signal).
+- Song-ID note for the 4 textless photos (phone theme fits): Drake =
+  Hotline Bling, Wiz Khalifa = Payphone (Maroon 5 feat.), Ghostbusters =
+  "who you gonna call", Stevie = "I just called". Theme => KEYPAD is the
+  intended mechanism; the missing piece is the SELECTION rule, which no
+  grid-internal test has produced.
+- Recommendation: obtain Level 6 + Level 7 puzzle assets (already-solved
+  pages, known plaintexts necklace/popcorn/love + ducks/pump/premium) and
+  the Level 0 hint page into the repo. Calibrating the author's mechanism
+  on a known answer is the only lead that is not a blind guess.
