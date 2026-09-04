@@ -140,3 +140,14 @@ len4 incl KYLE/MELT/TILL + 28 noise words (expected accidents).
 - HOMIE isolated (no shared cells). IDIOM shares 4 cells with HOMIE.
 - TAINT shares (5,0)=T with SMELT. SHEIK shares (4,1) with KELLI/SMELT.
 - Crossword-direction filter (across->/down-v only): HOMIE, KELLI, TAINT.
+
+## Unifying theory (2026-09-04): alphabetical convention + decoy triple
+- If author's order convention is ALPHABETICAL: X-triple submits as HST
+  (failed #1), Y-triple submits as IST. Y-start-order ITS (failed #3) is
+  then EXPECTED to fail. All three failures consistent with: answer=Y,
+  order=alphabetical => `idiom sheik taint`.
+- Design parses: pure-phone finds (HOMIE/SMELT/TILLS) are the obvious
+  decoys; the 1=I twist reveals the real triple; KELLI punishes
+  include-everything (4-word) attempts.
+- Queue if IST fails: `tills smelt kelli`, `kelli smelt tills`,
+  X-remnants (SHT/STH/THS/TSH), `homie kelli taint`, 4-word HKST.
