@@ -260,3 +260,13 @@ Queue: i-love-you > i-just-called > curly-Papa > noapos-Papa > isla.
   assignments incoherent, no principled alternative. PARKED.
 - OPERATIONAL: submissions are FREE, 1/minute, case-insensitive;
   spaces+spelling matter. (Relaxes earlier strike-fear; queue viable.)
+
+## Notion-agent transcript intake (2026-09-04)
+- Covers-as-instructions framing: Ghostbusters ("who you gonna call"),
+  Stevie ("I just called"), Personal Jesus ("reach out and touch faith"),
+  Papa ("don't P-reach" -> REACH). Converges on phone+Boggle method, not
+  on an answer triple. Contact-theme words (reach/call/touch) noted but
+  orderless: NOT a submittable candidate without a derived order.
+- Years (1984/86/87/89/2018) as touching-cell paths: tested, all fail.
+- MAD WORLD downgraded independently (WORLD needs unsupported swap).
+- No new payloads; inventory matches repo.
