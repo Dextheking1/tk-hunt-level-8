@@ -147,3 +147,4 @@ Extract: `python -c "d=open('grid.png','rb').read();open('pj.jpg','wb').write(d[
 - `homie smelt tills`, `homie tills smelt`, `idiom taint sheik`,
   `idiom sheik taint`, `smelt homie tills`, `smelt tills homie`,
   `tills homie smelt` (grid T9-word orders)
+- `widow droid cop` (PICDIGIT Nth-layer candidate — INVALID, chain retired)
