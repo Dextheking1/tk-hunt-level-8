@@ -160,3 +160,11 @@ Y-remnants SIT/STI/TIS/TSI.
   `tills smelt homie`, `sheik idiom taint`, `sheik taint idiom`,
   `taint idiom sheik`, `taint sheik idiom`
 DO NOT submit manually while the bot runs (state interleaving).
+
+## UI finding: stuck "Checking..." is cosmetic
+After any wrong guess, the Velo countdown re-enables the input and
+re-attaches onClick, but the button LABEL stays "Checking..." (the reset to
+"Submit" only runs at countdown start). The button remains fully clickable
+(and Enter in the input works). Bots must gate on INPUT-ENABLED, not label.
+- Submit #6 `smelt tills homie` -> INVALID (countdown restarted after it).
+- Bot v3 (input-gated) running remaining 6: THS/TSH + SIT/STI/TIS/TSI.
