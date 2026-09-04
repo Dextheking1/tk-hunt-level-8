@@ -128,3 +128,22 @@ English words.
 5. What roles do the nested *Papa Don’t Preach* and *I Just Called to Say I
    Love You* covers play? Candidate fragments `i love you` and `i just called`
    are unvalidated and do not yet connect cleanly to the grid.
+
+## Third nested cover: Depeche Mode "Personal Jesus" (solo track)
+`grid.png` also carries a 62,220-byte `eXIf` chunk (offset 0x21, right after
+`IHDR`, before the first `IDAT`). It holds a TIFF header plus one complete
+embedded 300x300 JPEG (offset 172 in the chunk) = Depeche Mode "Personal
+Jesus" (1989) single cover, tracked as `hidden/exif_personaljesus.jpg`.
+Its own metadata: Photoshop CS Windows, created 2016-12-19, original
+1000x1000, paint.net 4.3.11. Same 300x300 cover-art format as the two
+Madonna singles: deliberately planted. Lyric read ("reach out and touch
+faith") = look inside the files. Two words, so not the password itself.
+Extract: `python -c "d=open('grid.png','rb').read();open('pj.jpg','wb').write(d[0x21+8+172:0x21+8+62220])"`
+(or `exiftool -b -ThumbnailImage` on the chunk).
+
+## Further rejections (live gate, INVALID)
+- `la isla bonita`
+- `i love you`
+- `homie smelt tills`, `homie tills smelt`, `idiom taint sheik`,
+  `idiom sheik taint`, `smelt homie tills`, `smelt tills homie`,
+  `tills homie smelt` (grid T9-word orders)
