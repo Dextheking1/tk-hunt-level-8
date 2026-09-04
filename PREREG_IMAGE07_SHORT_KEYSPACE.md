@@ -46,3 +46,38 @@ that finite family dead; do not extend it post hoc. If all three miss, the open
 space is longer, mixed-character, or non-mechanical passwords.
 
 No live-site request or submission is involved.
+
+## Results
+
+### Stage A — seed-derived literals
+
+- 18 base representations expanded to 594 candidates (10,587 bytes).
+- Wordlist SHA-256:
+  `fbe849106a76fe7c73c0e10750b978a26bc88937e5bdc57441b2d24017d63dd9`
+- Result: no valid passphrase; no output.
+
+### Stage B — lowercase `a-z`, lengths 1–6
+
+- Generated exactly **321,272,406** candidates.
+- Wordlist size: **2,236,055,952 bytes**.
+- SHA-256:
+  `3055e77aa5fcecdfaa913ba59580167d4b6c2f28d4ffb9677cf32408d76971a4`
+- Positive control cracked exact passphrase `planet`; extracted bytes
+  hash-matched the source control payload.
+- `image07.jpg`: complete scan, no valid passphrase (exit 1).
+
+### Stage C — decimal strings, lengths 1–8
+
+- Generated exactly **111,111,110** candidates, including leading zeroes.
+- Wordlist size: **987,654,320 bytes**.
+- SHA-256:
+  `c45199e3a9e79bff4fc09b829088d768cb9220333986b276faf97aaf5029c635`
+- Positive control cracked exact passphrase `8675309`; extracted bytes
+  hash-matched the source control payload.
+- `image07.jpg`: complete scan, no valid passphrase (exit 1).
+
+## Decision
+
+All three frozen families are **killed**. The image07 passphrase is not a
+seed-literal/wrapper, not lowercase alphabetic of length at most six, and not a
+numeric string of length at most eight. No keyspace was extended post hoc.

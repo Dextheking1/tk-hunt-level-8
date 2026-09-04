@@ -151,3 +151,11 @@ hard evidence of another encrypted steghide payload; it is not an outguess
 false positive. Seed mode cannot extract encrypted bytes without the password.
 The repo-corpus 1,758,842-password sweep also missed, so cracking image07 is now
 the sole high-value forensic lead.
+
+## Addendum 8: image07 finite short-key families dead
+Preregistered controls and full scans passed. Seed-derived forms (594), every
+lowercase a-z string of length 1–6 (321,272,406), and every decimal string of
+length 1–8 including leading zeroes (111,111,110) all failed on image07. The
+controls independently recovered `planet` and `8675309` byte-perfectly. Thus
+the confirmed payload remains encrypted; its key is longer, mixed-character,
+or otherwise outside every mechanically justified key family tested so far.
