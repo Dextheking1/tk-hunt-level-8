@@ -51,3 +51,27 @@ anything and did not touch the live gate.
   wizkhalifa, maroon5, rayparker, madonna, islabonita, papadontpreach, stevie,
   wonder, ijustcalled, depechemode, violation/injection/election, plus spaced
   and apostrophe variants): 224 attempts, 0 hits. Steganography is closed.
+
+## Review: PIC_DIGIT / NKOTB / `widow droid cop` (requested, repo-only)
+- Raw path facts verified: the PICDIGITWORD digit string, its 12-cell
+  adjacency chain, and the TWO/OLD/KIDS/THE/RIGHT digit paths all check out
+  against the transcribed grid.
+- Not endorsed as derived. Load-bearing problems:
+  1. The picture alphabet gives 1-7 initials per digit; the PICDIGITWORD path
+     shape alone can produce 230,496 strings. ~12 candidate theme strings were
+     tested against ~0.15% per-string controls, so the family-wise chance is
+     ~1.8%, not 0.15%. Multiple comparisons were not accounted for.
+  2. Labels are disputed in-repo: image04 Drake vs R.Kelly changes digit 4;
+     image02 Wiz vs Maroon-5-still changes digit 5. Either flip collapses the
+     alphabet and every downstream word.
+  3. The stencil invokes "unnumbered hidden pictures" and an "image11" that
+     does not exist in inventory; positions 08-10 spell TWO only via flexible
+     multi-initial choices, then get declared "missing files".
+  4. Uniqueness carries no weight per my background test above (len-3/5 unique
+     rates ~48%/57%): unique THE, RIGHT, TWO, OLD, KIDS is chance-level.
+  5. The chain needs a band recognition (NKOTB), a synonym jump
+     (THINGY=STUFF), and Nth-word layers whose rules (one-word labels keep
+     their initial) are stipulated, not derived. The author admits COP is not
+     formally unique (COB/BOD/DOC/COD/GOD/DOG/ODD exist).
+- Practical: submits are free and gulag-safe, so `widow droid cop` costs
+  nothing to fire, but it should be logged as a guess, not a derivation.
