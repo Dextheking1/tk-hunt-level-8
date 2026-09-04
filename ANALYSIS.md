@@ -151,3 +151,12 @@ len4 incl KYLE/MELT/TILL + 28 noise words (expected accidents).
   include-everything (4-word) attempts.
 - Queue if IST fails: `tills smelt kelli`, `kelli smelt tills`,
   X-remnants (SHT/STH/THS/TSH), `homie kelli taint`, 4-word HKST.
+
+## Auto-queue (2026-09-04 ~07:44 UTC)
+Driving submits via CDP (trusted-key typing, UI-rate-limited, same 60s
+countdown as manual). 8 candidates: X-remnants SHT/STH/THS/TSH, then
+Y-remnants SIT/STI/TIS/TSI.
+- `smelt homie tills`, `smelt tills homie`, `tills homie smelt`,
+  `tills smelt homie`, `sheik idiom taint`, `sheik taint idiom`,
+  `taint idiom sheik`, `taint sheik idiom`
+DO NOT submit manually while the bot runs (state interleaving).
