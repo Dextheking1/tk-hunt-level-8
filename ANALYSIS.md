@@ -119,3 +119,24 @@ converges to exactly 3 after name exclusion.
   using the number 1 as a letter. Each Y word uses exactly one 1-cell.
 - Y orders: start-cell reading = IDIOM(0,5),TAINT(1,0),SHEIK(4,5);
   end-cell reading = alphabetical = IDIOM,SHEIK,TAINT.
+
+## Transcription audit (passed)
+Glyph-identity NCC + row-level TSV OCR + split-pattern analysis confirm
+EVERY cell. Key resolutions: six ambiguous cells = 5 (NCC-identical to
+certain (3,4)); five "9" cells really are 9 (exact row reads rows 3,5);
+both "7" cells really are 7; (2,1)=3 ("13" split), (2,0)=2, (1,5)=2.
+Grid as transcribed is CORRECT. T9 word inventory stands:
+len5 pure-phone HOMIE/KELLI/SMELT/TILLS; len5 1=I IDIOM/TAINT/SHEIK;
+len4 incl KYLE/MELT/TILL + 28 noise words (expected accidents).
+
+## Submit log (all INVALID)
+1. `homie smelt tills` (X triple, start-cell order)
+2. `homie tills smelt` (X triple, end-cell order)
+3. `idiom taint sheik` (Y triple, start-cell order)
+
+## Structural facts for next theories
+- Chain joints: TILLS[4]=S=SMELT[0]; SMELT[3]=L=KELLI[3].
+  Chain order TILLS->SMELT->KELLI ("tills smelt kelli") or reverse.
+- HOMIE isolated (no shared cells). IDIOM shares 4 cells with HOMIE.
+- TAINT shares (5,0)=T with SMELT. SHEIK shares (4,1) with KELLI/SMELT.
+- Crossword-direction filter (across->/down-v only): HOMIE, KELLI, TAINT.
