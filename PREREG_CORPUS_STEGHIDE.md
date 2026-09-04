@@ -57,3 +57,40 @@ has already been tested on all four carriers.
 - One validated hit: inspect only that extracted payload and continue the chain.
 - Zero validated hits on all four, with controls behaving correctly: mark this
   corpus-key family dead. Do not expand it post hoc.
+
+## Results
+
+Wordlist generation obeyed the frozen rule over 53 tracked files:
+
+- candidates: **1,758,842**
+- UTF-8 wordlist size: **37,113,179 bytes**
+- SHA-256: `5c78c22d962454642ca85a5d0f9b89b803a4f2f2ae8046b4c0992a425ebf9619`
+
+Controls:
+
+- Positive: blank-password extraction from `image04.jpg` reproduced the banked
+  `image11.jpg`/Stevie payload byte-for-byte, SHA-256
+  `7643d7326d34fe2671a545f0443c2f0e40536c3ea450959103f90dc8771ac7a0`.
+- Negative: the full wordlist against a freshly generated deterministic flat
+  Pillow JPEG returned `Could not find a valid passphrase` (exit 1) and wrote
+  no output file.
+
+Residual carriers, each tested against the entire identical wordlist:
+
+| carrier | stegseek result | output |
+|---|---|---|
+| `image02.jpg` | no valid passphrase, exit 1 | none |
+| `image06.jpg` | no valid passphrase, exit 1 | none |
+| `image07.jpg` | no valid passphrase, exit 1 | none |
+| `image12.jpg` | no valid passphrase, exit 1 | none |
+
+The first shell driver reached and cleared `image02.jpg` but then stopped on a
+non-POSIX `PIPESTATUS` expression. A corrected no-pipeline loop reran all four
+carriers from scratch and produced the table above.
+
+## Decision
+
+**Killed.** None of the four residual JPEGs uses a passphrase mechanically
+available through the preregistered repository-corpus, filename, ZIP-fact, or
+same-file fingerprint family. Per the decision rule, this family will not be
+expanded post hoc.
