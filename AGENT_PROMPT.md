@@ -49,3 +49,21 @@ verified, but check any cell you build a theory on).
 Output format: (1) the 3 words, (2) step-by-step derivation anyone can redo
 by hand in under 5 minutes, (3) why alternatives were rejected. If you fail,
 report which leads you exhausted so the next agent doesn't repeat them.
+
+## UPDATE 2026-09-04 ~08:30 UTC — falsified, do NOT retry
+The following were submitted to the live page and came back INVALID:
+`homie smelt tills`, `homie tills smelt`, `idiom taint sheik`,
+`idiom sheik taint`, `smelt homie tills`, `smelt tills homie`,
+`tills homie smelt`.
+Do NOT submit blind permutations. Only submit something with a NEW derived
+rule (pick triple AND order both justified from grid structure).
+Open threads (unfired, weak): TSH/SIT/STI/TIS/TSI orders, K-chain
+(`tills smelt kelli`/`kelli smelt tills` shares S then L), HKT crossword,
+4-word HKST, unique-direction triple. Note: background-rate analysis shows
+pure-T9 finds (4/grid vs 9.4 random avg) AND 1=I finds (9 vs 12.15 avg) are
+both at/below chance — the word sets may be filler noise; mechanism itself
+is UNCONFIRMED. Fresh mechanisms welcome (Hitori UNSAT x2, Minesweeper/
+Shikaku/Nurikabe/Fillomino/Mosaic killed by constraints, arithmetic/
+anagrams/Caesar/Boggle/bitmaps/paint/segments/title-anagram/grille-concat/
+whole-lines/spiral all dead). Best external lead: Discord user `retro`
+claimed L8 knowledge in #tk-lvl-8 at 7:29 AM.
