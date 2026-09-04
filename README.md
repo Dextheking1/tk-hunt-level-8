@@ -8,10 +8,10 @@ server-side via `validatePasswordAndAssignRole(8, password, memberId)`
 
 ## The puzzle
 
-Title on page: **BLOCK GRID THINGY**. One static image: a plain 7-wide x 6-tall
-grid, one digit (1-9) per cell, black on white, no colors, no blanks,
-no extra marks (verified programmatically: uniform white backgrounds,
-uniform ink, uniform line spacing).
+Title on page: **BLOCK GRID THINGY**. One static image appears to be a plain
+7-wide x 6-tall digit grid. Its rendered pixels are uniform, but the original
+file is a PNG/ZIP polyglot: a six-image music archive begins immediately after
+the PNG `IEND`. See `HIDDEN_FINDINGS.md`.
 
 Image: `grid.png` (original, 1176x1056)
 Source URL: https://static.wixstatic.com/media/0d5510_2edf85d9a3374cc2b99661a8384a96ae~mv2.png
@@ -43,10 +43,22 @@ back with reasoning instead.
   60s countdown -> enable input -> server-side check -> redirect `/level-9`.
   The Level-8 variant also resolves display name via
   `currentMember.getMember({fieldsets:["FULL"]})` -> nickname -> loginEmail prefix.
-- The grid image has no metadata, no steganography (uniform pixels verified).
+- The rendered grid pixels contain no extra marks, but `grid.png` has a valid
+  ZIP appended after `IEND`; the earlier no-steganography conclusion was false.
 - Digits present: 1-9 (no 0). Corners are 4, 6, 8, 9 (kills Minesweeper:
   corner clues 4/6/8 exceed 3 neighbors).
 - Row sums: 29, 37, 42, 27, 31, 39. Col sums: 29, 28, 34, 24, 32, 24, 36.
+
+## Current strongest intermediate (not solved)
+
+The six hidden artists in filename order give `MDWROD`; the nested PNG field
+name `Artist` supplies `A`, producing `MAD WROD`. Under phone-keypad and
+Boggle adjacency, `MAD` and `WROD` each have a unique path in the original
+grid. Swapping the R/O blocks gives a unique `WORLD` path. This strongly
+derives **MAD WORLD**, but `tears for fears` was submitted and is **INVALID**,
+so a further extraction remains. In addition, blank-password `steghide` on
+`image04.jpg` reveals a Stevie Wonder *I Just Called to Say I Love You* cover;
+that second nested clue is not yet reconciled with MAD WORLD.
 
 ## Ruled out (with evidence in ANALYSIS.md)
 
@@ -67,5 +79,10 @@ back with reasoning instead.
 | `page_dve99.json` | Level-8 page structure (171KB) |
 | `tb8_0.json` | site pages map |
 | `level8.html` | page shell (697KB) |
+| `2059E.zip` | carved six-image archive appended to the PNG |
+| `image01.png` through `image12.jpg` | six original hidden ZIP entries |
+| `image01_artist_hidden.jpg` | JPEG decoded from `image01.png` metadata |
+| `hidden/steg04.jpg` | Stevie Wonder JPEG extracted from `image04.jpg` |
+| `HIDDEN_FINDINGS.md` | extraction, confirmed identities, and MAD WORLD path |
 | `ANALYSIS.md` | full working notes: tested hypotheses + evidence |
 | `AGENT_PROMPT.md` | paste-ready brief for parallel solver agents |

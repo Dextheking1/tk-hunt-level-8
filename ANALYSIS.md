@@ -69,7 +69,7 @@ FIFE, GEED, FICA, ACID, CHEF, FAHD. Ruled out as solve path
 12. Username "BORIS" appeared in a solver's screenshot OCR (likely a Discord
     username, probably noise — flagging so nobody chases it twice).
 
-## SOLVED 2026-09-04 — T9 phone-keypad word search
+## Disproved 2026-09-04 — T9 phone-keypad word-search hypothesis
 
 Mechanism: each digit maps to telephone-keypad letters
 (2=ABC 3=DEF 4=GHI 5=JKL 6=MNO 7=PQRS 8=TUV 9=WXYZ, 1=break).
@@ -182,23 +182,54 @@ pure-T9 finds (4) AND 1=I finds are both at/below chance (9.4 / 12.15) --
 word sets may be filler noise, mechanism unconfirmed.
 Next: ask retro (claimed L8 knowledge in tk-lvl-8 7:29 AM). Await parallel agents.
 
-## Hidden-file solve path (2026-09-04)
-grid.png = 132KB PNG + 3.1MB appended ZIP (after IEND). ZIP: 6 music
-images (all 2026-09-03 23:35). image01 (Madonna La Isla Bonita) EXIF Artist
-= 20KB base64 data-URL -> Madonna Papa Don't Preach cover. Others: OVO-shirt
-man (Drake?), Wiz Khalifa, Ghostbusters cover, blonde guitarist, Dan Reynolds.
-No thumbnails/payloads/trailing data elsewhere. Row<->image T9 links all
-dead (rows lack required letters positionally). Grid & images independent.
-Submits: `papa don't preach` (ASCII) INVALID.
-Queue: `la isla bonita` (surface, typable, island-themed) >
-`papa don\u2019t preach` (curly U+2019: Wikipedia/smart-quote theory) >
-`papa dont preach` (normalization theory).
+## Hidden-file solve path (2026-09-04, corrected)
 
-## Steghide layer (2026-09-04): Stevie Wonder cover in image04
-`steghide extract -sf image04.jpg -p ""` -> 300x300 JPEG = Stevie Wonder
-"I Just Called To Say I Love You" single cover (steg04.jpg). No recursion
-(nested covers terminal; 100+ passphrases fail on 02/06/07/12; no LSB/
-thumbnails/markers elsewhere).
-Cover-text candidates: "la isla bonita" (surface) / "papa don't preach"
-variants incl curly U+2019 (deep) / "i love you" + "i just called" (Stevie
-hook vs setup). Photos yield no text. Grid rows cannot spell image words.
+`grid.png` is a PNG/ZIP polyglot. The archive starts at byte 132510 and has
+exactly six entries in order 01, 02, 04, 06, 07, 12. Confirmed outer-image
+identities: Madonna, Drake, Wiz Khalifa, Ray Parker Jr., Orianthi, and Dan
+Reynolds.
+
+`image01.png` has an `Artist` base64 field whose decoded bytes are a JPEG of
+Madonna and *Papa Don’t Preach*. See `HIDDEN_FINDINGS.md` for hashes and full
+extraction details.
+
+### Steghide layer in image04
+
+`steghide extract -sf image04.jpg -p ""` extracts a 300x300 JPEG of Stevie
+Wonder and *I Just Called to Say I Love You* (`hidden/steg04.jpg`, SHA-256
+`7643d7326d34fe2671a545f0443c2f0e40536c3ea450959103f90dc8771ac7a0`).
+No recursive payload was found in either nested cover. More than 100 candidate
+passwords failed on images 02, 06, 07, and 12, and no other thumbnail, marker,
+or LSB payload has been established.
+
+Possible cover-text leads include `i love you` and `i just called`; neither is
+recorded as submitted here. The Stevie layer also means the outer-artist
+acrostic below is a hypothesis, not an exhaustive use of all hidden content.
+
+### Grid confirmation of MAD WROD and MAD WORLD
+
+The six outer principal artist initials are `MDWROD`. Reading the literal
+metadata key `Artist` as an inserted `A` gives the hypothesis `MAD WROD`.
+
+With standard phone-keypad letters and eight-neighbour Boggle movement, the
+original grid has exactly one path for each of:
+
+- `MAD`: (0,6)=6 -> (1,5)=2 -> (0,4)=3
+- `WROD`: (2,5)=9 -> (1,4)=7 -> (2,3)=6 -> (3,2)=3
+
+Coordinates above are zero-based. Swapping the R/O blocks `(1,4)` and `(2,3)`
+changes 7/6 to 6/7. The modified grid then has exactly one `WORLD` path:
+
+- `WORLD`: (2,5)=9 -> (1,4)=6 -> (2,3)=7 -> (3,4)=5 -> (4,3)=3
+
+This is the strongest image-to-grid coincidence found so far and makes
+**MAD WORLD** a supported intermediate hypothesis, but not the password.
+
+### Rejected endpoints
+
+- `papa don’t preach` -> INVALID
+- `tears for fears` -> INVALID (reported by user 2026-09-04)
+
+The second failure disproves the simple MAD WORLD to original performer ending.
+Do not retry it. The file numbers, both nested covers, and/or selected grid
+cells likely drive another extraction.

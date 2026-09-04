@@ -30,7 +30,8 @@ Report back: the 3 words + the exact derivation. Never submit to the live page.
 
 - Velo code (`velo_dve99.js`) is a stock gate: 60s countdown, server-side
   password check, redirect to `/level-9`. Nothing hidden in it.
-- Image forensics clean: uniform white bg, black ink, no metadata/stego.
+- The rendered pixel grid is clean, but the file is a PNG/ZIP polyglot.
+  Do not repeat the earlier false no-steganography conclusion.
 - Digits 1-9 only. Corners 4/6/8/9 kill Minesweeper. Digit sum 205 kills
   Shikaku. No blanks kills Nurikabe/Fillomino-as-given. 7x6 too small for QR.
 - Direct A1Z26 (rows, cols, pairs, sums, products) = gibberish (see ANALYSIS.md).
@@ -67,3 +68,35 @@ Shikaku/Nurikabe/Fillomino/Mosaic killed by constraints, arithmetic/
 anagrams/Caesar/Boggle/bitmaps/paint/segments/title-anagram/grille-concat/
 whole-lines/spiral all dead). Best external lead: Discord user `retro`
 claimed L8 knowledge in #tk-lvl-8 at 7:29 AM.
+
+
+## UPDATE 2026-09-04 ~09:25 UTC — hidden-image intermediate
+
+`grid.png` has a ZIP appended after PNG `IEND`, starting at byte 132510. Its
+six files, in archive and filename order, identify:
+
+1. Madonna (*La Isla Bonita*; `Artist` metadata embeds *Papa Don’t Preach*)
+2. Drake
+3. Wiz Khalifa; blank-password `steghide` reveals a nested Stevie Wonder
+   *I Just Called to Say I Love You* cover
+4. Ray Parker Jr. (*Ghostbusters*)
+5. Orianthi
+6. Dan Reynolds (LOVELOUD photo)
+
+Initials: `MDWROD`. The literal nested-field name `Artist` supplies `A`, giving
+`MAD WROD`. On a standard phone keypad with eight-neighbour grid movement,
+`MAD` and `WROD` each have exactly one path in the original grid. Swapping the
+R/O cells, zero-based `(1,4)` and `(2,3)`, produces exactly one `WORLD` path:
+
+- MAD: `(0,6) -> (1,5) -> (0,4)` = `6,2,3`
+- WROD: `(2,5) -> (1,4) -> (2,3) -> (3,2)` = `9,7,6,3`
+- WORLD after swap: `(2,5) -> (1,4) -> (2,3) -> (3,4) -> (4,3)`
+  = `9,6,7,5,3`
+
+Thus **MAD WORLD is a strong intermediate**. However, `tears for fears` was
+submitted and returned **INVALID**. `papa don’t preach` was also INVALID.
+Do not propose either again. The Stevie layer means `MAD WROD` is not yet an
+exhaustive use of the hidden payloads. Find the next deterministic extraction,
+likely using filenames `01,02,04,06,07,12`, both nested covers, selected path
+cells, song or lyrics, or a block or mask operation. `i love you` and `i just
+called` are unvalidated fragments, not solutions. Repo-only; never access or submit to the live site.

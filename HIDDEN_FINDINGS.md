@@ -1,15 +1,130 @@
-# Hidden content in grid.png (found 2026-09-04 via binwalk)
-The 3.2MB grid.png = 132KB PNG + 3.1MB appended ZIP (after IEND).
-`unzip grid.png` extracts 6 music images (all dated 2026-09-03 23:35):
-- image01.png (300x300): Madonna "La Isla Bonita" single cover
-  - EXIF Artist tag = 20KB base64 data-URL -> decodes to JPEG =
-    Madonna "Papa Don't Preach" single cover (artist_hidden.jpg)
-- image02.jpg (800x1000): man in OVO shirt + backwards cap (Drake?)
-- image04.jpg (900x1250): Wiz Khalifa (face tattoos)
-- image06.jpg (18KB): Ray Parker Jr. "Ghostbusters" single cover
-- image07.jpg (1200x900): blonde woman guitarist, hat, red stage
-- image12.jpg (800x1054): Dan Reynolds (Imagine Dragons) live 2018-07-28
-No thumbnails, no other EXIF payloads, no appended data in any image.
-ZIP has exactly these 6 files (numbers skip 03,05,08-11).
-Candidate answers: "papa don't preach" (deepest, 3 EN words, apostrophe
-matches official "Punctuation matters"); "la isla bonita" (Spanish, weaker).
+# Hidden content in `grid.png`
+
+## Container and extraction facts
+
+Found 2026-09-04 with `binwalk` and ZIP carving.
+
+- The 3,279,027-byte `grid.png` is a PNG/ZIP polyglot.
+- The visible PNG ends at byte 132,510 (`0x2059e`).
+- A valid 3,146,517-byte ZIP begins at that offset and ends exactly at EOF.
+- The ZIP has no comment and contains exactly six files, in this order:
+  `image01.png`, `image02.jpg`, `image04.jpg`, `image06.jpg`,
+  `image07.jpg`, `image12.jpg`.
+- Recursive carving and metadata inspection found no further archive layer.
+
+The visible pixel layer itself is clean. The earlier conclusion that the whole
+file had no hidden content was wrong because it examined only PNG pixels and
+chunks and missed the archive appended after `IEND`.
+
+## Confirmed image inventory
+
+| file | identification | useful detail |
+|---|---|---|
+| `image01.png` | Madonna, *La Isla Bonita* cover | PNG `Artist` text field contains a base64 data URI |
+| nested payload | Madonna, *Papa Don’t Preach* cover | URI claims PNG, but decoded magic is JPEG (`FFD8FFE0`), 300x300 |
+| `image02.jpg` | Drake | OVO shirt and OVO-style cap |
+| `image04.jpg` | Wiz Khalifa | empty-password `steghide` payload |
+| nested `image04` payload | Stevie Wonder, *I Just Called to Say I Love You* cover | tracked as `hidden/steg04.jpg` |
+| `image06.jpg` | Ray Parker Jr., *Ghostbusters* cover | 200x199 cover image |
+| `image07.jpg` | Orianthi | white PRS guitar with the ornate O emblem |
+| `image12.jpg` | Dan Reynolds (Imagine Dragons) | LOVELOUD shirt; EXIF date 2018-07-28 |
+
+The user-provided `thumb.png` and `artist_thumb.jpg` are helper copies of the
+same nested Madonna image, and `img02_small.png` is a helper copy of
+`image02.jpg`; they are not additional ZIP entries.
+
+The `image01` nested JPEG has SHA-256
+`83431008255b5c4bccf2604e9db407579ef4d67c824af7f3d4fdb12e39d1c12b`.
+
+A second nested image is extracted with:
+
+```bash
+steghide extract -sf image04.jpg -p ""
+```
+
+It is a 300x300 Stevie Wonder *I Just Called to Say I Love You* cover with
+SHA-256 `7643d7326d34fe2671a545f0443c2f0e40536c3ea450959103f90dc8771ac7a0`.
+No recursive payload was found in either nested cover. Tests of more than 100
+candidate passwords on images 02, 06, 07, and 12 did not establish another
+`steghide` layer.
+
+## Artist-initial intermediate
+
+Taking the six principal artists in numeric filename order gives:
+
+```text
+01 Madonna       M
+02 Drake         D
+04 Wiz Khalifa   W
+06 Ray Parker Jr R
+07 Orianthi      O
+12 Dan Reynolds  D
+                 MDWROD
+```
+
+The literal metadata key `Artist` supplies an `A` inside the `image01` step,
+so the strongest reading is:
+
+```text
+M A D / W R O D
+MAD WROD
+```
+
+This is an intermediate hypothesis, not the password. The nested Stevie
+Wonder cover supplies additional content that this outer-artist acrostic does
+not yet explain, so `MAD WROD` must not be treated as a complete extraction.
+
+## Exact phone-keypad/Boggle fit
+
+Use ordinary phone-keypad groups (`2=ABC`, `3=DEF`, `5=JKL`, `6=MNO`,
+`7=PQRS`, `9=WXYZ`) and allow movement to any of the eight adjacent cells.
+Coordinates below are one-based.
+
+In the original grid there is exactly one non-reusing path for `MAD`:
+
+```text
+R1C7 6=M -> R2C6 2=A -> R1C5 3=D
+```
+
+There is also exactly one non-reusing path for `WROD`:
+
+```text
+R3C6 9=W -> R2C5 7=R -> R3C4 6=O -> R4C3 3=D
+```
+
+Swap the two R/O blocks at R2C5 and R3C4, exchanging the 7 and 6. The same
+opening cells now read `WOR`, and the modified grid contains exactly one
+non-reusing `WORLD` path:
+
+```text
+R3C6 9=W -> R2C5 6=O -> R3C4 7=R -> R4C5 5=L -> R5C4 3=D
+```
+
+This tightly supports **MAD WORLD** as an intended intermediate. A 50,000-grid
+same-size random simulation found unique `MAD` and unique `WROD` paths together
+in about 2.46% of grids; the meaningful R/O swap and unique `WORLD` continuation
+make the full coincidence substantially more specific.
+
+## Rejected conclusions
+
+These have been tried on the live gate and returned invalid:
+
+- `papa don’t preach`
+- `tears for fears` (the tempting original artist of *Mad World*)
+
+Therefore **MAD WORLD is not sufficient as a final solve**, and the last step
+cannot simply be to name the original performer. `la isla bonita` is also a
+weak endpoint because it ignores the rest of the payload and is not three
+English words.
+
+## Open questions
+
+1. What operation should follow the `MAD WORLD` intermediate?
+2. What is the exact role of filenames `01, 02, 04, 06, 07, 12` beyond order?
+3. Does the eight-cell `MAD` plus `WORLD` mask select, block, rotate, or reorder
+   other grid cells?
+4. Does *Mad World* identify lyrics, a particular recording or video, or
+   another music-related key rather than its artist?
+5. What roles do the nested *Papa Don’t Preach* and *I Just Called to Say I
+   Love You* covers play? Candidate fragments `i love you` and `i just called`
+   are unvalidated and do not yet connect cleanly to the grid.
