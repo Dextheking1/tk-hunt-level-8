@@ -294,3 +294,14 @@ Queue: i-love-you > i-just-called > curly-Papa > noapos-Papa > isla.
 - LEADS (need live-site reads, NOT yet authorized): Level 0 page (admin-
   confirmed hint for later levels), TOOL page (possible author decoder),
   /qa page, Level 6 grid image (known-plaintext calibration vs known answer).
+
+## Covers-as-instructions framing (Notion agent, banked 2026-09-04)
+Covers read as method hints, not answers: Ghostbusters ("who you gonna
+call") + Stevie ("I just called") -> CALL = phone keypad; Personal Jesus
+("reach out and touch faith") -> TOUCH = adjacent/Boggle cells; Papa
+("don't P-reach" -> REACH) consistent with touch-traversal. Since `i love
+you` failed, Stevie title likely tells HOW to traverse, not what to submit.
+Falsified under this framing: year-paths (1984/86/87/89/2018 as
+touching-cell paths all fail). MAD WORLD stays downgraded (WORLD needs the
+unsupported 7/6 swap). Open: what the traversal SELECTS (Boggle alone gives
+hundreds of words; still needs a pick-3 rule).
