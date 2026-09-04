@@ -35,5 +35,19 @@ all at chance. Covers: theme only, no selection. Page: exhausted
 (page-render.md + banana video dead). Remaining surfaces all need live reads:
 Level 0 hint page, TOOL decoder, /qa text, retro's Discord claim.
 Best guess-shape on record remains violation/injection/election (shared TION
-tail + 10 distinct letters are real; the pick rule is not). I did not submit
+tail + 10 distinct letters are real; the pick rule is not). UPDATE: the
+violation/injection/election orders, TSH/SIT/STI/TIS/TSI, `i just called` and
+no-apostrophe Papa all came back INVALID on the live gate. I did not submit
 anything and did not touch the live gate.
+
+## Addendum: steghide + metadata sweep (all dead)
+- EXIF on image02/04/06/07/12: stripped except image12 (empty UserComment /
+  Image Description, Windows Photo Editor, 2018-07-28 — all known). No
+  base64-length blobs in any JPG via strings.
+- 56 fresh cover/grid passwords x image02/06/07/12 (madworld, tearsforfears,
+  banana(s), kylewood, hotlinebling, payphone, ghostbusters, whogonnacall,
+  personaljesus, reachoutandtouchfaith, blockgridthingy, level8,
+  treasurekracken, loveloud, orianthi, reynolds, imaginedragons, drake,
+  wizkhalifa, maroon5, rayparker, madonna, islabonita, papadontpreach, stevie,
+  wonder, ijustcalled, depechemode, violation/injection/election, plus spaced
+  and apostrophe variants): 224 attempts, 0 hits. Steganography is closed.
