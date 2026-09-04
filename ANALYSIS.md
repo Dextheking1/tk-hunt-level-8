@@ -193,3 +193,12 @@ Submits: `papa don't preach` (ASCII) INVALID.
 Queue: `la isla bonita` (surface, typable, island-themed) >
 `papa don\u2019t preach` (curly U+2019: Wikipedia/smart-quote theory) >
 `papa dont preach` (normalization theory).
+
+## Steghide layer (2026-09-04): Stevie Wonder cover in image04
+`steghide extract -sf image04.jpg -p ""` -> 300x300 JPEG = Stevie Wonder
+"I Just Called To Say I Love You" single cover (steg04.jpg). No recursion
+(nested covers terminal; 100+ passphrases fail on 02/06/07/12; no LSB/
+thumbnails/markers elsewhere).
+Cover-text candidates: "la isla bonita" (surface) / "papa don't preach"
+variants incl curly U+2019 (deep) / "i love you" + "i just called" (Stevie
+hook vs setup). Photos yield no text. Grid rows cannot spell image words.
