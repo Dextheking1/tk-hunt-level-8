@@ -107,5 +107,20 @@ anything and did not touch the live gate.
      (THINGY=STUFF), and Nth-word layers whose rules (one-word labels keep
      their initial) are stipulated, not derived. The author admits COP is not
      formally unique (COB/BOD/DOC/COD/GOD/DOG/ODD exist).
-- Practical: submits are free and gulag-safe, so `widow droid cop` costs
-  nothing to fire, but it should be logged as a guess, not a derivation.
+## Addendum 4: Bananagrams theory (dead, all three readings)
+Idea: title-links-banana-video -> Bananagrams (interlocking word-grid game),
+"banana grid, but with numbers". Checked against the real rules/distribution
+(wiki: 144 tiles, J/K/Q/X/Z x2 ... E x18).
+1. Tile-set reading: Bananagrams distribution via T9 =
+   {2:19, 3:27, 4:19, 5:9, 6:22, 7:20, 8:18, 9:10}. Grid =
+   {2:2, 3:5, 4:5, 5:7, 6:6, 7:2, 8:4, 9:5} (+six 1s). Nowhere close
+   (5: 7 vs ~2.6 expected; 7: 2 vs ~5.8; 2: 2 vs ~5.5), with or without
+   counting 1s as wildcards. The grid is NOT a Bananagrams tile set. DEAD.
+2. Interlock reading (every row/col run a T9 word): already proven UNSAT in
+   repo (crossword-block CSP, minlen 2 and 3, all block digits). DEAD.
+3. Win-shout reading ("Bananas!"): BANANAS needs three T9-2 cells; the grid
+   has two ((1,5),(2,0)). Unformable in any reading, and one word anyway. DEAD.
+The banana video stays a joke placeholder.
+
+Practical (unchanged): submits are free and gulag-safe, so `widow droid cop`
+costs nothing to fire, but it should be logged as a guess, not a derivation.
