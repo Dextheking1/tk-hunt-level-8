@@ -141,3 +141,13 @@ known Level-0 snippet, no calibratable convention, TOOL effectively empty.
 Every known surface is now exhausted: grid, images, forensics, page, video,
 TOOL, QA, L6/L7, retro (joke). Residuals only: steghide passphrases on
 image02/06/07/12, missing slots 03/05/08/09/10, TEST/twilio/winner stubs.
+
+## Addendum 7: complete StegSeek seed scan finds image07 payload
+A preregistered full 2^32 seed-mode test, with known-positive image04 and a
+fresh negative JPEG, closed the interrupted earlier seed scans. Controls passed.
+image02/image06/image12 completed with no seed. **image07 reproducibly reports
+seed `0f58d719`, 19.3 KB compressed plaintext, rijndael-128/CBC.** This is new
+hard evidence of another encrypted steghide payload; it is not an outguess
+false positive. Seed mode cannot extract encrypted bytes without the password.
+The repo-corpus 1,758,842-password sweep also missed, so cracking image07 is now
+the sole high-value forensic lead.
