@@ -68,3 +68,31 @@ FIFE, GEED, FICA, ACID, CHEF, FAHD. Ruled out as solve path
     table? US states? book cipher needs a book — none given).
 12. Username "BORIS" appeared in a solver's screenshot OCR (likely a Discord
     username, probably noise — flagging so nobody chases it twice).
+
+## SOLVED 2026-09-04 — T9 phone-keypad word search
+
+Mechanism: each digit maps to telephone-keypad letters
+(2=ABC 3=DEF 4=GHI 5=JKL 6=MNO 7=PQRS 8=TUV 9=WXYZ, 1=break).
+Four English words hidden in straight lines (8 directions), each reading
+as a word in exactly one direction (all reverses gibberish):
+
+- HOMIE: row 0, cols 0-4, left-to-right [4,6,6,4,3]
+- KELLI: col 1, rows 1-5, top-to-bottom [5,3,5,5,4]
+- SMELT: diagonal (1,4)->(5,0) [7,6,3,5,8]
+- TILLS: col 4, rows 5-1, bottom-to-top [8,4,5,5,7]
+
+Cross-confirmation (classic planted-word-search design):
+KELLI x SMELT share (4,1)=5 (L/L); TILLS x SMELT share (1,4)=7 (S/S).
+
+Why exactly these (background test): 60 random 6x7 grids average 9.4
+len-5+ T9 words; this grid has 4 -> filler curated, survivors deliberate.
+KELLI is a proper name, unusable as a password word (precedent L6 uses
+common words) -> accident/decoy. Answer triple: HOMIE SMELT TILLS
+(reading order = alphabetical order).
+
+Phantoms excluded: with speculative 1=I mapping, IDIOM/TAINT/SHEIK
+(+junk CLXII/JILIN) also appear — but every one contains a literal 1-cell,
+which breaks decoding under the puzzle's own mapping, so the author (working
+in T9, where 1 maps to nothing) could never have planted them. Proof: the
+1=I theory yields 7 plants for a 3-word password (diverges); pure-T9 theory
+converges to exactly 3 after name exclusion.
