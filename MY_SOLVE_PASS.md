@@ -122,5 +122,17 @@ Idea: title-links-banana-video -> Bananagrams (interlocking word-grid game),
    has two ((1,5),(2,0)). Unformable in any reading, and one word anyway. DEAD.
 The banana video stays a joke placeholder.
 
+## Addendum 5: musician-letters (dead, both versions)
+Idea: the hidden musicians' letters must connect to the solve.
+1. Initials-as-T9-paths (pre-registered, 8 orders: outer zip-order first/last
+   names MDWROD/MDKPOR, nested byte-order DMS/MMW, all-nine, nested/outside
+   song initials PPI/LHPG): ZERO adjacent paths for every one. The musicians
+   do not sign the grid.
+2. Initials-as-anagrams: partial common words exist (word/worm/dorm;
+   pork/drop/prom; words/sword/worms) but none consumes any set cleanly, and
+   no principle picks the set, the order, or the split. Textbook sharpshooter.
+Covers stand as theme/instructions only (phone keypad + look-inside-files);
+no tested connection yields answer words.
+
 Practical (unchanged): submits are free and gulag-safe, so `widow droid cop`
 costs nothing to fire, but it should be logged as a guess, not a derivation.
