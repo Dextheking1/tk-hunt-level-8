@@ -159,3 +159,10 @@ length 1–8 including leading zeroes (111,111,110) all failed on image07. The
 controls independently recovered `planet` and `8675309` byte-perfectly. Thus
 the confirmed payload remains encrypted; its key is longer, mixed-character,
 or otherwise outside every mechanically justified key family tested so far.
+
+## Addendum 9: generic image07 passwords and common pairs dead
+Two more preregistered families completed with byte-perfect controls. A
+7,140,015-entry union of local generic passwords/dictionary/word-frequency
+forms missed. So did all 100,000,000 ordered pairs of the top 5,000 lowercase
+English words with empty/space/hyphen/underscore separators. This does not
+weaken the seed-mode carrier detection; it narrows the unresolved password.

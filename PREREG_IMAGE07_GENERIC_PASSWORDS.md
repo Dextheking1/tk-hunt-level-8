@@ -44,3 +44,34 @@ semantic title or artist candidates are added after the fact. Cryptographic
 extraction is the hit validator, so random-grid rates are inapplicable.
 
 No live-site request or submission is involved.
+
+## Results
+
+### Stage D — generic local single strings
+
+- Frozen list: **7,140,015** candidates; **62,220,747 bytes**.
+- SHA-256:
+  `7ad3b00f75124fe641277175f8722acbcf9b3953e5f4f0d569020abfd1fdfe45`
+- Positive control recovered exact passphrase `correcthorsebatterystaple` and
+  the extracted bytes matched the source payload SHA-256.
+- `image07.jpg`: complete scan, no valid passphrase (exit 1).
+
+### Stage E — common ordered two-word strings
+
+- Frozen base: 5,000 words; `yellow` rank 2,045 and `planet` rank 2,070.
+- Base-list SHA-256:
+  `8e740b9c5e5c05b9cac19219e05e181cc4115c477f63bff9e26b878ed162282f`
+- Generated exactly **100,000,000** pair/separator candidates;
+  **1,447,080,000 bytes**.
+- Pair-list SHA-256:
+  `b189e0e54da48a9a58ed43e6760ce4f88922a8fbe9ed315e87d52abc89707e98`
+- Positive control recovered exact passphrase `yellowplanet` and the extracted
+  bytes matched the source payload SHA-256.
+- `image07.jpg`: complete scan, no valid passphrase (exit 1).
+
+## Decision
+
+Both frozen families are **killed**. The confirmed image07 payload remains
+unextracted. Its key is not any tested generic local single-string variant and
+not any ordered pair among the top 5,000 lowercase English words under the four
+registered separators. No semantic or artist/title candidates were added.
