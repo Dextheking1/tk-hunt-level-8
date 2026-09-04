@@ -61,3 +61,35 @@ Before running it, replace only the failed observation layer as follows:
 If no passphrase-bearing hash/digest can be observed, or no frozen transform
 matches the StegSeek seed, this follow-up is killed; no extra hash formula is
 introduced post hoc.
+
+## Follow-up B result
+
+The libmhash trace succeeded and left steghide behavior unchanged (the `planet`
+control extracted byte-identically). Every passphrase is hashed with MD5
+(`mhash` algorithm 1), and the `planet` digest is cover-independent:
+
+`MD5("planet") = 5f295bce38d311f26a96eb811192f391`
+
+StegSeek independently found seed `2c52fe1c` for that carrier. None of the
+pre-registered contiguous digest windows/endian readings equals that seed, so
+follow-up B's frozen transform set is formally **killed**.
+
+A simple new relation is visible but is not accepted from one sample: XOR the
+four 4-byte MD5 quarters bytewise, obtaining `1cfe522c`, then interpret those
+four bytes as a little-endian integer, obtaining exactly `2c52fe1c`.
+
+## Preregistered follow-up C: validate MD5 XOR-folding
+
+Define, before any further seed scan:
+
+`H(p) = LE32(MD5(p)[0:4] XOR MD5(p)[4:8] XOR MD5(p)[8:12] XOR MD5(p)[12:16])`
+
+where `p` is the exact UTF-8 passphrase byte string. Compute `H` for the six
+other fixed passphrases (empty, `a`, `abc`, `test`, `8675309`, and
+`correcthorsebatterystaple`). Run complete StegSeek seed mode on each already
+created synthetic carrier. Also scan the second-cover `planet` carrier.
+
+Accept the mapping only if every reported seed equals `H(p)` and both `planet`
+carriers give the same seed. One mismatch kills it. A validated mapping permits
+a separately preregistered preimage search against target seed `0f58d719`, but
+no keyspace is implied by the mapping itself.
