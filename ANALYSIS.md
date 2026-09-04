@@ -168,3 +168,16 @@ re-attaches onClick, but the button LABEL stays "Checking..." (the reset to
 (and Enter in the input works). Bots must gate on INPUT-ENABLED, not label.
 - Submit #6 `smelt tills homie` -> INVALID (countdown restarted after it).
 - Bot v3 (input-gated) running remaining 6: THS/TSH + SIT/STI/TIS/TSI.
+
+## Status: 7 misses, guessing HALTED by operator
+Failed submits: HST, HTS, ITS, IST (manual) + SHT, STH, THS (bot, all
+confirmed-wrong via countdown-restart / no-redirect).
+Remaining Kung-fu: TSH/SIT/STI/TIS/TSI, K-chain (TSK/KST), HKT, 4-word HKST,
+X/Y-remnant orders. NO more blind submits without a derived rule.
+Partials established: transcription audited 3 ways; Hitori UNSAT x2;
+Minesweeper/Shikaku/Nurikabe/Fillomino/Mosaic killed by constraints;
+arithmetic/anagrams/Caesar/Boggle/bitmaps/paint/segments/title-anagram/
+grille-concat/whole-lines/spiral all dead; background-rate analysis shows
+pure-T9 finds (4) AND 1=I finds are both at/below chance (9.4 / 12.15) --
+word sets may be filler noise, mechanism unconfirmed.
+Next: ask retro (claimed L8 knowledge in tk-lvl-8 7:29 AM). Await parallel agents.
