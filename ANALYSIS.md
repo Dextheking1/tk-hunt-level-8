@@ -181,3 +181,15 @@ grille-concat/whole-lines/spiral all dead; background-rate analysis shows
 pure-T9 finds (4) AND 1=I finds are both at/below chance (9.4 / 12.15) --
 word sets may be filler noise, mechanism unconfirmed.
 Next: ask retro (claimed L8 knowledge in tk-lvl-8 7:29 AM). Await parallel agents.
+
+## Hidden-file solve path (2026-09-04)
+grid.png = 132KB PNG + 3.1MB appended ZIP (after IEND). ZIP: 6 music
+images (all 2026-09-03 23:35). image01 (Madonna La Isla Bonita) EXIF Artist
+= 20KB base64 data-URL -> Madonna Papa Don't Preach cover. Others: OVO-shirt
+man (Drake?), Wiz Khalifa, Ghostbusters cover, blonde guitarist, Dan Reynolds.
+No thumbnails/payloads/trailing data elsewhere. Row<->image T9 links all
+dead (rows lack required letters positionally). Grid & images independent.
+Submits: `papa don't preach` (ASCII) INVALID.
+Queue: `la isla bonita` (surface, typable, island-themed) >
+`papa don\u2019t preach` (curly U+2019: Wikipedia/smart-quote theory) >
+`papa dont preach` (normalization theory).
