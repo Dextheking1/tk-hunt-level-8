@@ -134,5 +134,10 @@ Idea: the hidden musicians' letters must connect to the solve.
 Covers stand as theme/instructions only (phone keypad + look-inside-files);
 no tested connection yields answer words.
 
-Practical (unchanged): submits are free and gulag-safe, so `widow droid cop`
-costs nothing to fire, but it should be logged as a guess, not a derivation.
+## Addendum 6: off-grid surfaces closed by operator (2026-09-04)
+Operator read all three live: Q&A full text, Level-6/Level-7 page JSONs, TOOL
+page content. Verdict: nothing burger on all three — no hint text beyond the
+known Level-0 snippet, no calibratable convention, TOOL effectively empty.
+Every known surface is now exhausted: grid, images, forensics, page, video,
+TOOL, QA, L6/L7, retro (joke). Residuals only: steghide passphrases on
+image02/06/07/12, missing slots 03/05/08/09/10, TEST/twilio/winner stubs.
