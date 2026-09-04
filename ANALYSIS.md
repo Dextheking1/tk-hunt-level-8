@@ -106,3 +106,16 @@ converges to exactly 3 after name exclusion.
   overthink it." No official L8 hint exists. tk-lvl-8 chat: waffle jokes,
   unexplained "video" confusion, "are you Kyle Wood" (KYLE is grid noise,
   len-4 diag). tk-lvl-9: only "First" claim (WifeElect, Sep 3), no mechanism.
+
+## Pivot 2026-09-04: HST triple dead, Y triple leads
+- `homie smelt tills` INVALID, `homie tills smelt` INVALID.
+- Accident math: TAINT needs 4 free cells ((1,0),(2,0),(3,0),(4,0) given
+  SMELT's (5,0)=8): P~1/6561 as filler chance. SHEIK likewise 1/6561.
+  Both MUST be deliberate plants => author endorses 1=I (digit 1 as letter I).
+- New theory: pure-phone finds (HOMIE/SMELT/TILLS) are DECOYS; real triple is
+  the three common words requiring the twist: IDIOM / TAINT / SHEIK
+  (CLXII dropped as non-word, JILIN as name - same filter shape).
+- Supporting: official rule "Letters and numbers are fair game" licenses
+  using the number 1 as a letter. Each Y word uses exactly one 1-cell.
+- Y orders: start-cell reading = IDIOM(0,5),TAINT(1,0),SHEIK(4,5);
+  end-cell reading = alphabetical = IDIOM,SHEIK,TAINT.
