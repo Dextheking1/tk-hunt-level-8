@@ -246,3 +246,10 @@ Rijndael-128/CBC ciphertext, SHA-256
 Entropy is 7.991366954418 bits/byte and no field after the public 65-bit header
 is readable without the passphrase. This validates exact byte recovery but
 provides no cryptographic shortcut; password recovery remains the blocker.
+
+## Addendum 17: Orianthi title-capitalization family dead
+The established Orianthi identification motivated one narrow omission from the
+old lowercase searches: 13 conventional case/joiner forms of *According to
+You*. This family was preregistered before hashing. The `planet` fold and exact
+synthetic decode controls passed; all 13 target folds missed `0f58d719`.
+No extraction was attempted and no candidate survives.

@@ -47,3 +47,14 @@ calculate every candidate's selector fold
 - Only a valid decoded object can motivate a later answer-derivation rule.
 
 No live-site request or submission is involved.
+
+## Results
+
+The `planet` fold control returned `2c52fe1c`, and the synthetic raw stream
+again decoded byte-for-byte to the registered 59-byte plaintext. All 13 frozen
+candidate byte strings were enumerated in the registered order. **Zero** had
+selector fold `0f58d719`, so extraction was correctly skipped.
+
+**Decision:** this exact title-capitalization family is killed. It does not
+weaken the Orianthi identification, but *According to You* is not the image07
+passphrase in any registered conventional case/joiner form.
