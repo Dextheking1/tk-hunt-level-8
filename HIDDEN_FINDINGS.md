@@ -205,3 +205,16 @@ outputs). Exact bytes are recorded in `image07_fast_fold_matches.tsv`. These
 masks are dead and must not be extended or revived post hoc. The exact remaining
 forensic blocker is the unknown image07 passphrase.
 >>>>>>> origin/master
+
+### State: image07 brute force at stopping point (2026-09-05)
+Cumulative killed password space: ~392B candidates — printable ≤5,
+mixed-case alnum ≤6, lowercase alnum ≤7, lowercase ≤8 (351.7B
+vectorized), printable ≤4 + alnum 5-6 + lowercase 7 (11.2B), best64
+162.5M, top-1000 triples 4B, top-5000 pairs 100M, decimal 1-8 111M,
+lowercase 1-6 321M, corpus 1.76M, dictionary 145K, generic 7.1M,
+puzzle-vocab triples 150M + pairs 449K, mechanical strings 2.1K,
+semantic 380, cover words 56, seed literals 594. Remaining gaps
+(printable 6-8, alnum 7-8, lowercase-alnum 8) are 77B-700T: outside
+finite sweep scope per the preregistered stopping rule. Any further
+image07 work requires a new clue (payload content, member pages), not
+more brute force.
