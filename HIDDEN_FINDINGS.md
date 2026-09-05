@@ -157,6 +157,7 @@ from installed best64 rules over local generic sources. Mask fold collisions
 `ketoxe`, `smzqagh`, and `ovxqfiu` each failed extraction twice. These are hash
 collisions, not answer candidates; never submit or revive them.
 
+<<<<<<< HEAD
 ### Burn: image07 puzzle-vocabulary triple keys (2026-09-05)
 335-word V (top-300 common board words ∪ 24 cover-title words ∪ 14
 artist-name words) × ordered triples × 4 joinings = 150,381,500 candidates,
@@ -193,3 +194,14 @@ averages 0.207 dict hits/grid. At/below chance -> not a mechanism.
   ducks/popcorn/necklace >5000 -> house word generation extends past the
   top-5,000; a house-format 3-word steghide password lives in a >1T space
   and is outside finite sweep scope (consistent with all nulls).
+=======
+### Burn: vectorized image07 fold masks (2026-09-05)
+A controlled Hashcat-kernel implementation first matched the complete scalar
+control set exactly (`{test}`). It then exhausted 351,729,273,631 frozen keys:
+printable length 5, mixed-case alphanumeric length 6, lowercase alphanumeric
+length 7, and lowercase length 8. The 88 independently verified fold
+collisions all failed ordinary steghide extraction twice (176 failures, no
+outputs). Exact bytes are recorded in `image07_fast_fold_matches.tsv`. These
+masks are dead and must not be extended or revived post hoc. The exact remaining
+forensic blocker is the unknown image07 passphrase.
+>>>>>>> origin/master

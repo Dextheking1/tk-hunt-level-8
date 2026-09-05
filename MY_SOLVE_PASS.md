@@ -187,7 +187,18 @@ and 162,505,112 generic best64 mutations. Three mask fold collisions
 (`ketoxe`, `smzqagh`, `ovxqfiu`) all failed extraction twice; best64 had no
 collision. The confirmed image07 payload remains encrypted.
 
-## Addendum 13: puzzle-vocabulary triple passwords dead
+## Addendum 13: vectorized image07 masks dead
+The preregistered copied-kernel control passed: scalar and vectorized complete
+lowercase-length-4 collision sets were both exactly `{test}`. Four target masks
+then completed all 351,729,273,631 candidates and emitted 88 random 32-bit fold
+collisions (null expectation 81.893). Every collision independently matched
+seed `0f58d719`; every one failed normal steghide extraction twice. Complete
+bytes and outcomes are in `image07_fast_fold_matches.tsv`. No candidate or
+answer was recovered. The image07 carrier remains real, but its password is
+outside every finite family tested; without a new clue, extending brute force
+would violate the preregistered stopping rule.
+
+## Addendum 14: puzzle-vocabulary triple passwords dead
 With the validated MD5-fold oracle, all 150,381,500 ordered triples from the
 335-word puzzle vocabulary (top-300 common board words ∪ cover-title words ∪
 artist-name words; SHA 492af997…) under empty/space/hyphen/underscore joining
@@ -195,7 +206,7 @@ were checked (canary `the for you` = 87503672 passed): zero fold collisions
 vs `0f58d719`. With the 4B top-1,000 triple kill, three-word passwords built
 from words the puzzle surfaces are now fully closed.
 
-## Addendum 14: puzzle-vocabulary pair passwords dead
+## Addendum 15: puzzle-vocabulary pair passwords dead
 All 448,900 ordered pairs from the 335-word puzzle vocabulary under the four
 joinings, canary-validated (`love you` = c0adf94b): zero fold collisions vs
 0f58d719. With the top-5,000² kill and the corpus kill, two-word passwords
