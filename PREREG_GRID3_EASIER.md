@@ -133,3 +133,26 @@ prior rounds (all grid-word orders killed), so none of the five survivors
 No live interaction. The clue's residual value: the 37-cell canonical
 grid + removed-cell exclusion remain valid constraints for any future
 non-word-search mechanism.
+
+### T8 — clue-corrected digit sum (2026-09-05, pre-registered, hand-derived)
+
+The clue states the removed numbers are the ones "you dont need" — i.e.
+the 37 remaining cells are the numbers the puzzle WANTS. The accepted
+#3 queue candidate `two zero seven` (207) summed ALL 42 cells, including
+the five the author explicitly marked unnecessary. The clue therefore
+redefines the sum set: sum of the canonical 37 cells only.
+
+- Sum = 42-board 207 minus removed run 6+1+8+4+9 = 28 → **179**.
+  Hand-verified by row sums: 30 + 37 + 42 + 27 + 31 + 12 = 179.
+- Candidate: **`one seven nine`** (same class as accepted #3
+  `two zero seven`: digit-word triple, "letters and numbers are both
+  usable", trivial hand derivation, no alphabets).
+- Control/remarkability: the 37-digit multiset is fixed, so EVERY
+  permutation of the canonical board sums to 179 — the value is
+  unremarkable in magnitude (vs a random 37-subset of the 42-cell
+  multiset: expected 207×37/42 ≈ 182.4; 179 is ~0.2σ below that — the
+  kept multiset's own sum). Strength = same as #3: weak on its own,
+  legitimate on the derivation.
+- Queue proposal (for operator, NOT self-submitted): #2 `call touch
+  reach` ×6 perms unchanged → **`one seven nine` (clue-corrected sum) →
+  `two zero seven` (pre-clue sum, now weakened)**.
