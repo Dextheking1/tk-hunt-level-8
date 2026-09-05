@@ -34,3 +34,14 @@ Together with top-5000² (swarm) and the triple kills (swarm 4B + this repo
 (closed by Stage D/corpus/56-words for 1-word, this family for 2-word, the
 two triple kills for 3-word) is exhausted. Only 4+ word or non-surface
 passwords remain (outside finite sweep scope).
+
+## Results (2026-09-05, executed after commit 6852abd)
+
+- Canary: `love you` (c0adf94b) found exactly once (0.4 s).
+- Target: all **448,900** candidates checked; **zero fold collisions** vs
+  `0f58d719`.
+
+## Decision: KILLED
+
+Every two-word password built from puzzle-surfaced words is now closed (this
+family ∪ top-5,000² swarm kill ∪ corpus sequences).

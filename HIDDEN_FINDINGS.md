@@ -165,3 +165,9 @@ VOCAB.md). Together with the 4B top-1000 triple kill, no three-word password
 composed of puzzle-surfaced words can hold the image07 payload. Do not
 revive with reordered V or extra joinings; only words outside the puzzle
 surface (unknown 10th image, personal) remain.
+
+### Burn: image07 puzzle-vocabulary pair keys (2026-09-05)
+335-word V x ordered pairs x 4 joinings = 448,900 candidates, canary
+`love you` = c0adf94b passed, zero fold collisions vs 0f58d719
+(PREREG_IMAGE07_PAIR_VOCAB.md). Two-word passwords from puzzle-surfaced
+words are closed; do not revive with reordered V.

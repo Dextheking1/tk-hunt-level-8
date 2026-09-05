@@ -194,3 +194,9 @@ artist-name words; SHA 492af997…) under empty/space/hyphen/underscore joining
 were checked (canary `the for you` = 87503672 passed): zero fold collisions
 vs `0f58d719`. With the 4B top-1,000 triple kill, three-word passwords built
 from words the puzzle surfaces are now fully closed.
+
+## Addendum 14: puzzle-vocabulary pair passwords dead
+All 448,900 ordered pairs from the 335-word puzzle vocabulary under the four
+joinings, canary-validated (`love you` = c0adf94b): zero fold collisions vs
+0f58d719. With the top-5,000² kill and the corpus kill, two-word passwords
+from puzzle-surfaced words are fully closed.
