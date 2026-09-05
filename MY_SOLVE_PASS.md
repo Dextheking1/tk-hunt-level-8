@@ -267,6 +267,13 @@ intent.) Phrase-shaped passwords from grid/cover vocabulary are closed. The
 image07 password is outside every tested family; parked per stopping rule
 pending a new clue (Twilio member bodies remain the last unopened surface).
 
+## Addendum 19: independent 3.4M-fold sweep blank (2026-09-05)
+Second agent, fold oracle only (no binaries in its env): ~700 themed
+passphrases, 370k singletons x3 cases (~1.11M), core+year/suffix forms
+(~50k), ~7k themed pairs, 1,500x1,500 sampled pairs (2.25M), 27-themed
+triples (19,683). Arithmetic checks (~3.44M total), zero collisions.
+Converges with all prior misses. Park stands.
+
 ## Addendum 20: from-scratch re-verification (2026-09-05)
 Hashes of all four carriers match originals (no tampering). Fresh full-2^32
 `stegseek --seed` scans from this box: image02 miss, image06 miss (first
@@ -275,10 +282,3 @@ image12 miss (first independent check). Combined with prior image04 HIT and
 fresh-JPEG miss, the map is confirmed without trusting any log. (The 19.3 KB
 figure comes from seed-mode metadata output, never from `steghide info` —
 no other source was ever claimed.)
-
-## Addendum 19: independent 3.4M-fold sweep blank (2026-09-05)
-Second agent, fold oracle only (no binaries in its env): ~700 themed
-passphrases, 370k singletons x3 cases (~1.11M), core+year/suffix forms
-(~50k), ~7k themed pairs, 1,500x1,500 sampled pairs (2.25M), 27-themed
-triples (19,683). Arithmetic checks (~3.44M total), zero collisions.
-Converges with all prior misses. Park stands.
