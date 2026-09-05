@@ -180,3 +180,9 @@ top 1,000 lowercase English words under empty/space/hyphen/underscore joining.
 The control recovered `thetimeyou`; independent C/Python fold samples matched.
 The target produced zero fold collisions, so this complete family cannot hold
 the image07 password.
+
+## Addendum 12: bounded masks and best64 image07 passwords dead
+Controlled MD5-fold scans completed 11,207,042,464 disjoint bounded-mask keys
+and 162,505,112 generic best64 mutations. Three mask fold collisions
+(`ketoxe`, `smzqagh`, `ovxqfiu`) all failed extraction twice; best64 had no
+collision. The confirmed image07 payload remains encrypted.

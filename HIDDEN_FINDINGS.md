@@ -148,3 +148,11 @@ Extract: `python -c "d=open('grid.png','rb').read();open('pj.jpg','wb').write(d[
   `idiom sheik taint`, `smelt homie tills`, `smelt tills homie`,
   `tills homie smelt` (grid T9-word orders)
 - `widow droid cop` (PICDIGIT Nth-layer candidate — INVALID, chain retired)
+
+### Burn: image07 bounded masks and generic best64 rules (2026-09-05)
+With the validated MD5-fold seed oracle, full controlled searches killed:
+printable ASCII length <=4, mixed-case alphanumeric length 5, lowercase
+alphanumeric length 6, lowercase alphabetic length 7, and 162,505,112 outputs
+from installed best64 rules over local generic sources. Mask fold collisions
+`ketoxe`, `smzqagh`, and `ovxqfiu` each failed extraction twice. These are hash
+collisions, not answer candidates; never submit or revive them.
