@@ -341,7 +341,7 @@ Digit-order strings (rows/cols/boustrophedons/spiral/diagonals + reverses,
 wrestling/magic-adjacent vocab, extended music terms, keyboard walks,
 classic passwords with mutations, months/days/colors): zero hits.
 
-## Addendum 29: carrier visuals closed + top-2000 triples launched (2026-09-05)
+## Addendum 30: carrier visuals closed + top-2000 triples launched (2026-09-05)
 All carriers now eyeballed: image12 = Reynolds/LOVELOUD stage (no text
 beyond shirt), steg04 and artist_hidden = standard single covers, no
 hidden text. 113-fold micro-batch (first-letters, solver names, weekdays):
