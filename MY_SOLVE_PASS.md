@@ -370,3 +370,10 @@ Same 8B triple space with `-`/`_` joinings (the deferred remainder) on the
 4 otherwise-idle cores; script pinned as `tools_scan2000b.py` (a near-miss
 where the separators briefly reverted was caught before launch). Both scans
 independent; either reports here on completion/collision.
+
+## Addendum 33: top-2000 triples complete, 5/5 random (2026-09-05)
+Main scan finished (7,940s): 8B triples x empty/space, 5 fold collisions
+(`hits answers might`, `frame against detail`, `documentationparktuesday`,
+`already est fan`, `doing mother tue`) — every one failed `steghide
+extract`. Null expectation ~3.7; observed 5. The necklace/popcorn-depth gap
+is closed for these joinings. Hyphen/underscore phase-2 still running.
