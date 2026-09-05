@@ -1,5 +1,13 @@
 # Level 8 working notes
 
+## COMPLETE MAP (2026-09-05) — see COMPLETE_MAP.md
+
+Consolidated inventory: grid.png (XMP/eXIf + 6-file ZIP, verified), image01
+(artist/XMP, readable), image02/06/12 (proven empty by full 2^32 scans),
+image04 (Stevie cover, embedded name image11.jpg, blank passphrase),
+image07 (19.3 KB payload — **the only remaining lock**, unknown passphrase),
+3 nested covers terminal with zero trailing bytes.
+
 ## VERDICT 2026-09-05 — image07 payload claim VERIFIED (see VERDICT_PAYLOAD_CLAIM.md)
 
 - `image07.jpg @ 0f58d719` → steghide magic **0x73688d**, version 0,
@@ -48,8 +56,10 @@ were proven to be single-component glyphs of matching pixel sizes
 (1260/1293 px pairs at (1,1)/(4,1) and (1,6)/(4,6)) — all are 5.
 
 Image forensics: backgrounds all 255, ink all 0, uniform grid spacing
-(129px cols, ~133px rows), RGBA alpha all 255, no EXIF/text chunks.
-The image carries nothing but the digits.
+(129px cols, ~133px rows), RGBA alpha all 255. (CORRECTION 2026-09-05: the
+old "no EXIF/text chunks" line was wrong/incomplete — grid.png carries an
+XMP/eXIf chunk at 0x1ce and an embedded ZIP at 0x2059e containing all six
+carrier files byte-identical to top level. See COMPLETE_MAP.md.)
 
 ## Arithmetic tests (all gibberish)
 
