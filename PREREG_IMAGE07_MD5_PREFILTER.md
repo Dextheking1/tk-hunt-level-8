@@ -48,3 +48,29 @@ extractions count as a recovered password. Otherwise the entire frozen triple
 family is dead and will not be expanded post hoc.
 
 No live-site request or submission is involved.
+
+## Results
+
+- Frozen 1,000-word base SHA-256:
+  `46adcbb0e99aa158faeda262a909f7aa40abf865c6666bb8c54001ac6c10698f`
+- The 100-word control enumerated exactly 4,000,000 candidates and returned
+  the registered password `thetimeyou` at indices `(0,58,10)`, separator 0.
+- C/Python sample folds matched directly:
+  - first `thethethe`: `7a6026fb`
+  - middle `nothethe`: `3b0fa0b5`
+  - last `much_much_much`: `4422e416`
+- A later regex-only assertion in the shell wrapper malformed its capture and
+  printed a Python traceback. This did not alter the scanner or target run;
+  the values above are present identically in the independent Python and C
+  output, and the exact registered control match was recovered.
+- Target enumeration completed all **4,000,000,000** candidates in 89.023 s
+  at 44.932 million MD5 folds/s on 12 threads.
+- Target fold collisions: **0**. Therefore there were no passwords to send to
+  steghide extraction.
+
+## Decision
+
+The entire preregistered top-1,000 common three-word family under empty, space,
+hyphen, and underscore joining is **killed**. Zero collisions is compatible
+with the predeclared null expectation (Poisson mean 0.9313); it is not itself a
+rare clue. No base expansion or semantic term was added.
