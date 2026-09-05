@@ -304,13 +304,6 @@ phone numbers (5552368 Ghostbusters, 8675309 Jenny), area codes (416, 310,
 overseer), meta-tool words (rijndael, steghide, seed, payload), seed/IV
 strings, Twilio/Discord names. Images mined dry at password depth.
 
-## Addendum 26: post-easifier leftovers dead (2026-09-05)
-Sudoku-shape readings die on dimensions (6x7 with repeats, not 9x9).
-A1Z26 straight lines rerun on the REDUCED grid: zero words len>=5.
-Digit-order strings (rows/cols/boustrophedons/spiral/diagonals + reverses,
-22 candidates) as image07 passwords: zero fold hits. Cipher key-squares
-(Playfair/Polybius/tap need 5x5; no ciphertext exists anywhere): no fit.
-
 ## Addendum 23: scattershot password batch blank (2026-09-05)
 2,908 fresh candidates via fold oracle, zero hits: page IDs, Velo strings,
 Utah/sea/mythology vocab, file sizes, missing-slot numbers, prior answers
@@ -328,3 +321,10 @@ of them against `0f58d719` (12-core pool): zero hits. Largest single
 untested family is now closed. Password space status: every motivated
 family exhausted; only unmotivated brute force (random masks beyond tested
 bounds) remains, parked per stopping rule.
+
+## Addendum 26: post-easifier leftovers dead (2026-09-05)
+Sudoku-shape readings die on dimensions (6x7 with repeats, not 9x9).
+A1Z26 straight lines rerun on the REDUCED grid: zero words len>=5.
+Digit-order strings (rows/cols/boustrophedons/spiral/diagonals + reverses,
+22 candidates) as image07 passwords: zero fold hits. Cipher key-squares
+(Playfair/Polybius/tap need 5x5; no ciphertext exists anywhere): no fit.
