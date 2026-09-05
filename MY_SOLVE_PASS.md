@@ -303,3 +303,8 @@ phone numbers (5552368 Ghostbusters, 8675309 Jenny), area codes (416, 310,
 412, 313), word-form years, feud specifics (aminor, certified, pulitzer,
 overseer), meta-tool words (rijndael, steghide, seed, payload), seed/IV
 strings, Twilio/Discord names. Images mined dry at password depth.
+
+## Addendum 23: scattershot password batch blank (2026-09-05)
+2,908 fresh candidates via fold oracle, zero hits: page IDs, Velo strings,
+Utah/sea/mythology vocab, file sizes, missing-slot numbers, prior answers
+concatenated, common wordlists, keyboard walks, classics. Well dry.
