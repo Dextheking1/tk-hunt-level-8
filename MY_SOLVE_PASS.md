@@ -274,6 +274,15 @@ passphrases, 370k singletons x3 cases (~1.11M), core+year/suffix forms
 triples (19,683). Arithmetic checks (~3.44M total), zero collisions.
 Converges with all prior misses. Park stands.
 
+## Addendum 20: from-scratch re-verification (2026-09-05)
+Hashes of all four carriers match originals (no tampering). Fresh full-2^32
+`stegseek --seed` scans from this box: image02 miss, image06 miss (first
+independent check), image07 HIT `0f58d719` + 19.3 KB / rijndael-128 / CBC,
+image12 miss (first independent check). Combined with prior image04 HIT and
+fresh-JPEG miss, the map is confirmed without trusting any log. (The 19.3 KB
+figure comes from seed-mode metadata output, never from `steghide info` —
+no other source was ever claimed.)
+
 ## Addendum 21: fresh password batch blank (2026-09-05)
 268 previously untested candidates via fold oracle, zero hits: full grid
 digit strings (rows/cols/flat/forwards/reversed), full dates (1987-02-25,
@@ -283,12 +292,3 @@ level9, gulag, tetris, Cor), Discord/Twilio names, Orianthi deep cuts
 (believe, heaveninthishell, michaeljackson, alicecooper, sambora, bonjovi),
 feud deep cuts (pulitzer, euphoria, meetthegrahams, notlikeus, garyjules,
 donniedarko). Nothing left in this vein.
-
-## Addendum 20: from-scratch re-verification (2026-09-05)
-Hashes of all four carriers match originals (no tampering). Fresh full-2^32
-`stegseek --seed` scans from this box: image02 miss, image06 miss (first
-independent check), image07 HIT `0f58d719` + 19.3 KB / rijndael-128 / CBC,
-image12 miss (first independent check). Combined with prior image04 HIT and
-fresh-JPEG miss, the map is confirmed without trusting any log. (The 19.3 KB
-figure comes from seed-mode metadata output, never from `steghide info` —
-no other source was ever claimed.)
