@@ -29,3 +29,11 @@ convergence, no coherent text. DEAD.
 Tested inside the sweep (46 image-derived keys: artists, titles, surnames,
 lyric hooks, hunt words). Dead with it. No image functions as a cipher key
 under any grid-cipher family with available inputs.
+
+## Executed: Nihilist (grid pairs minus image-word T9 key)
+Second family with all inputs available (21 pairs + image keys + Polybius
+squares incl. keyed variants). Sweep: 42 keys x 43 squares, row-major,
+col-major, and boustrophedon pair orders. ZERO full decodes in every order
+(high digits can never subtract into valid 11-55 coordinates — structural
+kill, not noise; 30-grid background also all-zero). DEAD. Grid-cipher
+family now fully exhausted: two executed sweeps dead, rest dead on inputs.
