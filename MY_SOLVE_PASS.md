@@ -95,9 +95,11 @@ anything and did not touch the live gate.
      shape alone can produce 230,496 strings. ~12 candidate theme strings were
      tested against ~0.15% per-string controls, so the family-wise chance is
      ~1.8%, not 0.15%. Multiple comparisons were not accounted for.
-  2. Labels are disputed in-repo: image04 Drake vs R.Kelly changes digit 4;
-     image02 Wiz vs Maroon-5-still changes digit 5. Either flip collapses the
-     alphabet and every downstream word.
+  2. Labels were uncertain in-repo at the time (image02's Kendrick second
+  face was unknowable to AI; image04 carried a Wiz-vs-Wayne dispute, since
+  resolved visually in Wiz Khalifa's favor: dreadlocks, backwards cap,
+  face/hand ink, nose ring). Either flip would have collapsed the
+  alphabet and every downstream word.
   3. The stencil invokes "unnumbered hidden pictures" and an "image11" that
      does not exist in inventory; positions 08-10 spell TWO only via flexible
      multi-initial choices, then get declared "missing files".
