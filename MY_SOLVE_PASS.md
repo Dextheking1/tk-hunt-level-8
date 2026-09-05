@@ -364,3 +364,9 @@ collisions over 16B candidates). `steghide extract` with it failed
 ("invalid length", no output): random collision, not the password. Scan
 still running; further random collisions expected and meaningless without
 extraction.
+
+## Addendum 32: phase-2 hyphen/underscore scan launched (2026-09-05)
+Same 8B triple space with `-`/`_` joinings (the deferred remainder) on the
+4 otherwise-idle cores; script pinned as `tools_scan2000b.py` (a near-miss
+where the separators briefly reverted was caught before launch). Both scans
+independent; either reports here on completion/collision.
