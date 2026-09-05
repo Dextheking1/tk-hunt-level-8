@@ -148,6 +148,9 @@ Extract: `python -c "d=open('grid.png','rb').read();open('pj.jpg','wb').write(d[
   `idiom sheik taint`, `smelt homie tills`, `smelt tills homie`,
   `tills homie smelt` (grid T9-word orders)
 - `widow droid cop` (PICDIGIT Nth-layer candidate — INVALID, chain retired)
+- `homie kelli smelt`, `homie smelt kelli`, `kelli homie smelt`,
+  `kelli smelt homie`, `smelt homie kelli`, `smelt kelli homie`
+  (easier-grid exactly-3 orders — ALL INVALID, straight-line closed)
 
 ## image02 identity resolved (operator + visual check, 2026-09-05)
 image02 = Drake on stage (OVO shirt, chains, mic, backwards cap) with a

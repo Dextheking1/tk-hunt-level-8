@@ -304,6 +304,12 @@ phone numbers (5552368 Ghostbusters, 8675309 Jenny), area codes (416, 310,
 overseer), meta-tool words (rijndael, steghide, seed, payload), seed/IV
 strings, Twilio/Discord names. Images mined dry at password depth.
 
+## Addendum 24: composite image strings blank (2026-09-05)
+197 full titles, lyric lines, initial-chains (mdwrod/mdkpor/dms/mmw),
+image filenames with extensions, games/movies (tetris/boggle/bananagrams),
+call phrases — zero fold hits. Passphrase-from-images now fails at singles,
+pairs, triples, full titles, lyric lines, and composites.
+
 ## Addendum 23: scattershot password batch blank (2026-09-05)
 2,908 fresh candidates via fold oracle, zero hits: page IDs, Velo strings,
 Utah/sea/mythology vocab, file sizes, missing-slot numbers, prior answers
