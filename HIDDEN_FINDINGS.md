@@ -149,6 +149,17 @@ Extract: `python -c "d=open('grid.png','rb').read();open('pj.jpg','wb').write(d[
   `tills homie smelt` (grid T9-word orders)
 - `widow droid cop` (PICDIGIT Nth-layer candidate — INVALID, chain retired)
 
+## image02 identity resolved (operator + visual check, 2026-09-05)
+image02 = Drake on stage (OVO shirt, chains, mic, backwards cap) with a
+deliberate double-exposure ghost overlay of a second face (operator IDs it as
+Kendrick Lamar; overlay confirmed visually, second-face ID taken on trust).
+Scanline/interlace texture throughout. This closes the old Drake-vs-R.Kelly
+dispute in favor of Drake camp and explains past AI misidentification: the
+ghosting is author-applied and AI-resistant by design. Theme note: GHOST now
+has two anchors (Ghostbusters cover + this effect), but GHOST has zero grid
+paths and no mechanism, so it stays theme-only. Separating the two exposures
+is underdetermined from the blend alone — not pursued.
+
 ### Burn: image07 bounded masks and generic best64 rules (2026-09-05)
 With the validated MD5-fold seed oracle, full controlled searches killed:
 printable ASCII length <=4, mixed-case alphanumeric length 5, lowercase
