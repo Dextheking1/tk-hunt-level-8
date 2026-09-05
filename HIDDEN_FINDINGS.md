@@ -171,3 +171,25 @@ surface (unknown 10th image, personal) remain.
 `love you` = c0adf94b passed, zero fold collisions vs 0f58d719
 (PREREG_IMAGE07_PAIR_VOCAB.md). Two-word passwords from puzzle-surfaced
 words are closed; do not revive with reordered V.
+
+### Burn: multi-tap T9 decoding of rows/cols (2026-09-05)
+Consecutive-same-digit = multi-press (1 = separator), 13 strings (6 rows +
+7 cols): zero dictionary words on the grid; N=1000 random-grid control
+averages 0.207 dict hits/grid. At/below chance -> not a mechanism.
+
+### Surface closures (2026-09-05, live reads)
+- /ig = "INSTAGRAM GIVEAWAYS" heading only (empty). /blog, /tool, /post =
+  signup-walled. /twilio/blank = guest 404.
+- /level-0 = true 404 (guest); /level-1 (known member page) = signup wall,
+  so level-0 does not exist this season. The "Level 0 hint" Q&A entries are
+  2025-season artifacts.
+- Q&A guest feed = all 27 questions (counter visible); newest = retro
+  "labyrinth trick" (1d ago). No new admin answers. Q&A fully mined.
+- Home page (guest): COUNTDOWN section with 4 ChatGPT card images (Aug 8
+  2026, decorative site art; the 1254x1254 header twin already OCR'd
+  text-free), hunt_status badge, blog/discord banners, one empty "Heading 2".
+  No new puzzle content reachable as guest.
+- House answer-word ranks (wordfreq en): love 147, premium 4106, pump 4480,
+  ducks/popcorn/necklace >5000 -> house word generation extends past the
+  top-5,000; a house-format 3-word steghide password lives in a >1T space
+  and is outside finite sweep scope (consistent with all nulls).
