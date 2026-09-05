@@ -55,3 +55,62 @@ clues. Only duplicate successful, hash-identical extraction recovers the key.
 A miss closes only these exact families; no post-hoc mutation or mask extension.
 
 No live-site request or submission is involved.
+
+## Results
+
+### Stage F — disjoint masks
+
+The control covered exactly 55,986 strings over `abc123`, lengths 1–6. It
+returned registered key `a1b2c3`; first/middle/last C folds equalled independent
+Python values.
+
+| family | candidates | fold hits | elapsed |
+|---|---:|---:|---:|
+| printable ASCII, lengths 1–4 | 82,317,120 | 0 | 2.150 s |
+| mixed-case alphanumeric, length 5 | 916,132,832 | 0 | 21.371 s |
+| lowercase alphanumeric, length 6 | 2,176,782,336 | 1 | 56.126 s |
+| lowercase alphabetic, length 7 | 8,031,810,176 | 2 | 193.693 s |
+
+All **11,207,042,464** registered candidates completed. The three expected
+32-bit collisions were:
+
+- `ketoxe`
+- `smzqagh`
+- `ovxqfiu`
+
+Each failed ordinary steghide extraction twice (exit 1, no output). No password
+was recovered.
+
+Alphabet-file SHA-256 values:
+
+- mixed-case alphanumeric:
+  `540363d1071a002997290cd8f4a2bdf3acd0355ffad3b3f25f52aad6ebad936a`
+- control: `6ca13d52ca70c883e0f0bb101e425a89e8624de51db2d2392593af6a84118090`
+- lowercase: `71c480df93d6ae2f1efad1447c66c9525e316218cf51fc8d9ed832f2daf18b73`
+- lowercase alphanumeric:
+  `011fc2994e39d251141540f87a69092b3f22a86767f7283de7eeedb3897bedf6`
+- printable ASCII:
+  `cb2a9233adc1225c5c495c46e62cf6308223c5e241ef33ad109f03141b57966a`
+
+### Stage G — best64 mutations
+
+The first autonomous run was stopped after its source writer incorrectly tried
+to encode non-ASCII John entries as ASCII; it reached no target test. The
+corrected byte-preserving run used exactly the preregistered sources:
+
+| source | lines | bytes | SHA-256 |
+|---|---:|---:|---|
+| John passwords | 1,795,689 | 15,326,337 | `394b37122b633dd05fe7aae7eb973c37431d9b090b7ac74b3b89b16a7c8cdf7e` |
+| printable-ASCII wordfreq | 314,767 | 2,597,433 | `b96fff7c6ce413689a4bd35b2e1ccf7a5a67b191ad453547a14875bbd048d8d1` |
+| combined (duplicates preserved) | 2,110,456 | 17,923,770 | `0f0459293ee17d5ef161daf9f3071c235acbba6e40b1b6682d1b2b458578911d` |
+
+The control emitted 77 candidates and returned exact registered mutation
+`planet1`. The target emitted **162,505,112** candidates in 73 s and produced
+**zero** fold collisions. Rule-file SHA-256 matched the preregistration:
+`96ec12f5d080bbe8a743fc58a33bf85defee5258797ce1f3b6894a0448b223c3`.
+
+## Decision
+
+Both registered families are **killed**. The three mask collisions were random
+and cryptographically rejected; generic best64 mutations produced none. No mask
+or rule was expanded after the results.
