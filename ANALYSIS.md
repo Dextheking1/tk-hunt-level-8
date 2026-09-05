@@ -1,5 +1,37 @@
 # Level 8 working notes
 
+## VERDICT 2026-09-05 — image07 payload claim VERIFIED (see VERDICT_PAYLOAD_CLAIM.md)
+
+- `image07.jpg @ 0f58d719` → steghide magic **0x73688d**, version 0,
+  rijndael-128/CBC, nplainbits 157,865 (19,733.1 B plain), enc stream 19,760 B.
+  Two independent pipelines (C/libjpeg.so.62 + pure Python) with the FULL
+  encrypted streams **bit-identical** (image07 158,079 b; image04 390,527 b).
+- **INDEPENDENTLY CONFIRMED (f02ddfa, 2026-09-05):** full 2^32 `stegseek
+  --seed` scans — image04 HIT (3b75655e+metadata), image07 HIT
+  (0f58d719+metadata), image02 MISS, fresh synthetic MISS. The counter-claim
+  (capacity-conflation) is dead: its controls tested `steghide info` capacity,
+  never seed mode. The 88-vs-81.893 count was a failed crack (random fold
+  collisions), never payload evidence.
+- Original "0xb3eb88" claim was a jpeg_dct.py dequantization bug — fixed (RAW
+  mode reads quantized coefficients, exactly what libjpeg/StegSeek see).
+- Format: steghide JPEG = 3 samples/vertex (fork JpegFile.h), capacity =
+  numSamples/3 bits (matches swarm 55.6 KB for image07 exactly).
+- **seed = LE32(XOR-fold(MD5(pw)))** (validated 7/7 + cover control; StegSeek
+  -p mode implements it). ARITHMETIC: H("") = 3b75655e = image04's seed →
+  **image04 passphrase = "" (my earlier "refuted" claim WITHDRAWN — overreach
+  corrected in VERDICT_PAYLOAD_CLAIM.md)**.
+- OPEN (my side): image04 stream does NOT decrypt under key=MD5("") at any
+  offset 33–73 / 20+ key variants (49-bit oracle, AES re-verified FIPS C.1).
+  Ground truth (H("") seed + swarm's successful `-p ""` extraction) says the
+  passphrase IS blank → the author's steghide build (which the swarm runs)
+  must derive the AES key non-standardly, or my evs pipeline has a subtle
+  bug. Close with one synthetic carrier (known-answer) or the author's
+  binary. Does NOT affect the payload verdict.
+- Operational: origin/master = single-commit rewrite, tip f02ddfa. 7ff5f1b
+  does not exist on the server — never pushed (like d69ca74 before it; treat
+  that source as untrusted until verified). Local re-clone dropped 6188fb4
+  objects; branch recovered via fetch + reset --mixed.
+
 ## Grid (verified)
 
 ```
