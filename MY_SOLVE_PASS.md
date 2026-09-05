@@ -349,3 +349,18 @@ From the Soundtrack LP" + "Original No. 1 Hit in USA" badge) and image07
 rayparkerjr, hat, purple…): zero fold hits. Submit-order audit: all 18
 principled straight-line orders confirmed burned; only unprincipled
 remnants (HKT/HKST/mixed-family) never fired — left unfired deliberately.
+
+## Addendum 30: carrier visuals closed + top-2000 triples launched (2026-09-05)
+All carriers now eyeballed: image12 = Reynolds/LOVELOUD stage (no text
+beyond shirt), steg04 and artist_hidden = standard single covers, no
+hidden text. 113-fold micro-batch (first-letters, solver names, weekdays):
+zero hits. Top-2000-English triples scan (8B x empty/space joinings, closes
+the necklace/popcorn-depth gap) launched in background; hyphen/underscore
+remainder deferred. Result pending — see cache scan2000.done.
+
+## Addendum 31: first triples collision fails auth (2026-09-05)
+Scan emitted `hits answers might` (fold match, as expected ~4 random
+collisions over 16B candidates). `steghide extract` with it failed
+("invalid length", no output): random collision, not the password. Scan
+still running; further random collisions expected and meaningless without
+extraction.
