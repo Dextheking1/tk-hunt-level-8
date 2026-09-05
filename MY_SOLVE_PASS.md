@@ -197,3 +197,18 @@ bytes and outcomes are in `image07_fast_fold_matches.tsv`. No candidate or
 answer was recovered. The image07 carrier remains real, but its password is
 outside every finite family tested; without a new clue, extending brute force
 would violate the preregistered stopping rule.
+
+## Addendum 14: image07 payload independently verified (2026-09-05)
+- `stegseek --seed` on image04 (positive control) reports seed `3b75655e`
+  = the MD5-XOR-fold of the blank passphrase, 47.7 KB / rijndael-128 / CBC:
+  method validated end to end.
+- Same command on image07 reports seed `0f58d719`, 19.3 KB compressed /
+  rijndael-128 / CBC. The encrypted payload is REAL (not an outguess-class
+  artifact). Fold formula re-derived independently: 7/7 doc samples plus all
+  88 TSV collisions match (an initial "mismatch" was my own endianness bug,
+  corrected to little-endian).
+- Local dictionary fold-filter (~105k words from top-1m/NCSC/common, x4 case
+  variants): zero hits. The 88 known collisions all fail extraction, so the
+  true passphrase is still unknown. Per the stopping rule, no further brute
+  force without a new clue; the last unopened live surface remains the
+  Twilio member bodies.
