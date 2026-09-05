@@ -210,8 +210,19 @@ would violate the preregistered stopping rule.
 - Local dictionary fold-filter (~105k words from top-1m/NCSC/common, x4 case
   variants): zero hits. The 88 known collisions all fail extraction, so the
   true passphrase is still unknown. Per the stopping rule, no further brute
-  force without a new clue; the last unopened live surface remains the
-  Twilio member bodies.
+force without a new clue; the last unopened live surface remains the
+Twilio member bodies.
+
+## Addendum 15: two password families miss image07 (2026-09-05)
+Agent-supplied lists never arrived, so both families were regenerated here
+and committed (`fam_boggle_unique5_mine.txt`: 426 unique-path len-5 words
+from american-english; `fam_madworld_mine.txt`: 91 cover/feud words).
+Fold oracle: zero hits. `stegseek --crack` on image07 with both: no
+passphrase. Families exhausted. NOTE: /tmp was wiped mid-hunt (g10k,
+popular, enable1 gone); future runs must use /usr/share/dict or repo-pinned
+lists. The kinky/plate/shied and smelt/fishy/ninja triples verified
+structurally (unique paths, mutually disjoint) but endorsed by no puzzle
+principle — not answers, not passwords.
 - Dispute adjudication (2026-09-05): a counter-claim argued the seed hit is
   capacity-conflation. Decisive negatives run by me: full 2^32 `stegseek
   --seed` on image02 and on a fresh synthetic JPEG both return "Could not
