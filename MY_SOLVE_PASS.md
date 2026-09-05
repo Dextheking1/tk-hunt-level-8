@@ -234,3 +234,15 @@ principle — not answers, not passwords.
   clean files do not produce. Prior note: image04's payload is ALSO
   rijndael-128/CBC, so encryption-per-se is already author behavior; only a
   non-empty passphrase would be new.
+
+## Addendum 16: known-seed raw ciphertext recovered, still opaque
+A locally patched StegSeek build passed all preregistered controls: the image04
+stream decoded with the blank passphrase to the exact known `image11.jpg`; a
+fresh `planet` carrier decoded byte-for-byte; and a fresh clean JPEG completed
+2^32 seeds with no hit or dump. Image07 then yielded a 19,760-byte stream:
+16-byte IV `e5777082fda3b3ff0054e56b6ce096f1` plus 19,744 bytes of aligned
+Rijndael-128/CBC ciphertext, SHA-256
+`dd8bd04b408b1d64e9801f37835b16cc7af54549c9d735f26942985dd67e856d`.
+Entropy is 7.991366954418 bits/byte and no field after the public 65-bit header
+is readable without the passphrase. This validates exact byte recovery but
+provides no cryptographic shortcut; password recovery remains the blocker.
