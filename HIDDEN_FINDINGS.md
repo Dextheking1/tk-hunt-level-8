@@ -266,6 +266,34 @@ more brute force.
    Hit in USA" badge), 55 cover-text candidates zero; all 18 principled
    straight-line orders confirmed burned.
 
+## 2026-09-05 (night pass)
+
+11. **Merged swarm master c97cc94 (6 commits; union).** Addendum 30: all
+    carrier visuals closed (image12 = Dan Reynolds / LOVELOUD stage, no
+    text; steg04 + artist_hidden = standard covers, no hidden text);
+    113-fold micro-batch (initials, solver names, weekdays) zero hits;
+    **top-2000-English triples scan launched** (2000^3 ordered x
+    empty/space = 16B candidates — closes the necklace/popcorn-depth
+    gap beyond the dead 4B top-1000 scan); hyphen/underscore remainder
+    pinned (tools_scan2000b.py). Addendum 31: first collision
+    `hits answers might` failed steghide extraction ("invalid length")
+    = expected ~4 random collisions over 16B, not the password.
+12. **Re-verified the four merged "unfamiliar" files as already
+    adjudicated:** PIC_DIGIT_BREAKTHROUGH.md (PICDIGITWORD path +
+    TWO/OLD/KIDS + THE RIGHT STUFF + Nth layers -> `widow droid cop`)
+    = INVALID, live-rejected, chain retired (HIDDEN_FINDINGS "Further
+    rejections" + swarm MY_SOLVE_PASS rebuttal: family-wise ~1.8%
+    chance, stipulated Nth rules, THINGY=STUFF synonym jump, COP not
+    formally unique, image11 not a standalone file, "TWO" via flexible
+    multi-initial choice); FABLE_ROUND3.md (six grid mechanisms dead);
+    VIDEO_LINK.md (banana video = joke, Bananagrams readings all dead);
+    page-render.md (L8 page fully inventoried: title link, grid, ".",
+    input, Submit, footer — nothing else exists). No new work from them.
+13. **Queue-as-passphrase re-confirmed for the merged picture set:**
+    nothing in the new commits changes the fold target or the dead
+    queue folds. image07 passphrase remains the sole lock; stopping
+    rule intact; no submissions by me.
+
 ## 2026-09-05 (evening, "keep solving" pass)
 
 7. **This Is It family EXECUTED + KILLED.** Ran the swarm's 31 frozen
