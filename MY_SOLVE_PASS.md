@@ -186,3 +186,14 @@ Controlled MD5-fold scans completed 11,207,042,464 disjoint bounded-mask keys
 and 162,505,112 generic best64 mutations. Three mask fold collisions
 (`ketoxe`, `smzqagh`, `ovxqfiu`) all failed extraction twice; best64 had no
 collision. The confirmed image07 payload remains encrypted.
+
+## Addendum 13: vectorized image07 masks dead
+The preregistered copied-kernel control passed: scalar and vectorized complete
+lowercase-length-4 collision sets were both exactly `{test}`. Four target masks
+then completed all 351,729,273,631 candidates and emitted 88 random 32-bit fold
+collisions (null expectation 81.893). Every collision independently matched
+seed `0f58d719`; every one failed normal steghide extraction twice. Complete
+bytes and outcomes are in `image07_fast_fold_matches.tsv`. No candidate or
+answer was recovered. The image07 carrier remains real, but its password is
+outside every finite family tested; without a new clue, extending brute force
+would violate the preregistered stopping rule.

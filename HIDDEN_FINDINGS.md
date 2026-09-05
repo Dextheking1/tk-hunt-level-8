@@ -156,3 +156,13 @@ alphanumeric length 6, lowercase alphabetic length 7, and 162,505,112 outputs
 from installed best64 rules over local generic sources. Mask fold collisions
 `ketoxe`, `smzqagh`, and `ovxqfiu` each failed extraction twice. These are hash
 collisions, not answer candidates; never submit or revive them.
+
+### Burn: vectorized image07 fold masks (2026-09-05)
+A controlled Hashcat-kernel implementation first matched the complete scalar
+control set exactly (`{test}`). It then exhausted 351,729,273,631 frozen keys:
+printable length 5, mixed-case alphanumeric length 6, lowercase alphanumeric
+length 7, and lowercase length 8. The 88 independently verified fold
+collisions all failed ordinary steghide extraction twice (176 failures, no
+outputs). Exact bytes are recorded in `image07_fast_fold_matches.tsv`. These
+masks are dead and must not be extended or revived post hoc. The exact remaining
+forensic blocker is the unknown image07 passphrase.
