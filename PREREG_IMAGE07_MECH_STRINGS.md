@@ -25,7 +25,7 @@ dictionaries, or exhaustive short strings:
 validated: `H("planet") = 2c52fe1c` — exactly the StegSeek-reported seed for
 the swarm's `planet` control carrier (PREREG_STEGHIDE_SEED_MAPPING.md).
 
-## Frozen family (1,000 candidates, bytewise-sorted)
+## Frozen family (1,721 candidates, bytewise-sorted)
 
 - F1: `imageNN` / `imageNN.jpg` for NN = 00..99, x {verbatim, upper,
   capitalize} — **includes the missing slots 03/05/08/09/10, absent from
@@ -48,12 +48,19 @@ the swarm's `planet` control carrier (PREREG_STEGHIDE_SEED_MAPPING.md).
   Believe, Hot Rocks Vol. 2, If You're Reading This It's Too Late, More Life,
   Ghostbusters OST, Imagine Dragons, It's Time, Night Visions, Evolve) x 5 forms.
 
-Artifact: `image07_mech_strings.txt`, 1,000 lines, SHA-256
-`718da3576b788610cbf01dbc51cff2c23ca1c0c01b42189633ce649a30a941d3`.
+- F11: well-known phone-keyword song titles (frozen 55-title set: Call Me
+  Maybe, Telephone, Ring Ring, Operator, Dial 87-6543, ...) x 5 forms + T9
+  digit forms — motivated by the page's total phone theme and the 10th,
+  still-unknown image.
+- F12: famous/fictional phone numbers (8675309, 911, 1212, 1010INFO + T9
+  10104633, 555-0100..0199 block, pattern numbers, T9 of INFO/OPERATOR).
+
+Artifact: `image07_mech_strings.txt`, **1,721 lines**, SHA-256
+`0fcb77a8d16f1d286693e43600c5b73116c6d4d7057f51e60f584c0c0cc9c76a`.
 
 ## Result
 
-**0 of 1,000 candidates satisfies `H(p) = 0f58d719`** (computed locally with
+**0 of 1,721 candidates satisfies `H(p) = 0f58d719`** (computed locally with
 the validated H; no steghide execution involved).
 
 ## Expected StegSeek seeds for follow-up C validation
@@ -75,7 +82,7 @@ above becomes a tool-validated kill of this family:
 ## Decision rule
 
 - If follow-up C confirms H (all seven seeds match): the swarm runs
-  `stegseek image07.jpg -w image07_mech_strings.txt` (1,000 lines, seconds)
+  `stegseek image07.jpg -w image07_mech_strings.txt` (1,721 lines, seconds)
   for the tool-validated verdict; a miss kills the mechanically-derived
   string family. The remaining key space is then only the unknown payload's
   own content or author-personal strings — outside finite sweep scope.
