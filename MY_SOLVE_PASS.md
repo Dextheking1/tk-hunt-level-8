@@ -292,3 +292,14 @@ level9, gulag, tetris, Cor), Discord/Twilio names, Orianthi deep cuts
 (believe, heaveninthishell, michaeljackson, alicecooper, sambora, bonjovi),
 feud deep cuts (pulitzer, euphoria, meetthegrahams, notlikeus, garyjules,
 donniedarko). Nothing left in this vein.
+
+## Addendum 22: image-depth password sweep blank (2026-09-05)
+687 fresh candidates via fold oracle, zero hits, across previously untested
+image-derived classes: artists' real names (ciccone, aubrey, duckworth,
+thomaz, stevland, gahan, panagaris), lyric singles (flesh, celebrate,
+upset, stupid, familiar, cellphone, bustin, demons), B-sides (dangerous),
+Spanish lyrics (sanpedro), track lengths (347, 427, 412, 405, 401),
+phone numbers (5552368 Ghostbusters, 8675309 Jenny), area codes (416, 310,
+412, 313), word-form years, feud specifics (aminor, certified, pulitzer,
+overseer), meta-tool words (rijndael, steghide, seed, payload), seed/IV
+strings, Twilio/Discord names. Images mined dry at password depth.
