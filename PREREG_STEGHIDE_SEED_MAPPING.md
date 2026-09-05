@@ -93,3 +93,38 @@ Accept the mapping only if every reported seed equals `H(p)` and both `planet`
 carriers give the same seed. One mismatch kills it. A validated mapping permits
 a separately preregistered preimage search against target seed `0f58d719`, but
 no keyspace is implied by the mapping itself.
+
+## Follow-up C result: mapping validated
+
+The Python implementation of the preregistered formula printed these
+predictions before any control scan:
+
+| passphrase | `H(p)` | StegSeek seed |
+|---|---:|---:|
+| empty | `3b75655e` | `3b75655e` |
+| `a` | `927c8494` | `927c8494` |
+| `abc` | `275fa452` | `275fa452` |
+| `test` | `cb4257a3` | `cb4257a3` |
+| `planet` | `2c52fe1c` | `2c52fe1c` |
+| `8675309` | `07a3d533` | `07a3d533` |
+| `correcthorsebatterystaple` | `cc703c87` | `cc703c87` |
+
+The second-cover `planet` carrier also reported `2c52fe1c`. Thus every fixed
+sample and the cover-independence control match exactly: the MD5 XOR-fold
+mapping is **validated**.
+
+The validation shell script accidentally hard-coded six different numbers in
+its later `predicted=` display fields; those fields consequently printed
+`match=no`. They were transcription errors, not outputs of `H`. The formula's
+actual pre-scan Python outputs (listed above) equal all seven StegSeek results.
+
+## Consequence
+
+For exact passphrase bytes `p`, steghide's 32-bit selector seed is:
+
+`LE32(MD5(p)[0:4] XOR MD5(p)[4:8] XOR MD5(p)[8:12] XOR MD5(p)[12:16])`.
+
+Therefore target seed `0f58d719` is a fast 32-bit filter for password
+candidates. A fold match is only a collision candidate; ordinary steghide
+extraction must still authenticate the real password. Candidate keyspaces
+remain subject to separate preregistration.

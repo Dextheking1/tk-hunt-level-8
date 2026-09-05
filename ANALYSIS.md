@@ -353,7 +353,6 @@ L6 grid calibration (all need live-site reads, awaiting operator OK).
   the Level 0 hint page into the repo. Calibrating the author's mechanism
   on a known answer is the only lead that is not a blind guess.
 
-
 --- (agent-2 sections merged back) ---
 
 ## 2026-09-04 (agent-2): steghide verification, Artist keyword, census correction, FINAL RANKED CANDIDATES

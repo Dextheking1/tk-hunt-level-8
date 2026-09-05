@@ -44,3 +44,16 @@ Calibration lead is now addressable: Level-6 (`q10kp`) and Level-7 (`rfoq0`)
 page JSON + Velo can be pulled from the static CDN the same way `tb8_0.json`
 and `velo_dve99.js` were obtained. Compare the author's keypad/selection
 convention against known `necklace popcorn love` / `ducks pump premium`.
+
+## Twilio router (site-native, verified in `level8.html`)
+`/twilio/*` is the site's own dynamic router (`routers-meym2esh`: backend
+`twilio_Router` + `twilio_SiteMap`, template page `b0tok`). Persona URLs
+(`/twilio/Ash| Aiden|Jess|Morgan` = Ash Stowe, Aiden Johnson, Jess White,
+Morgan James) resolve server-side, which is why no static page JSONs exist
+for them. Names predate all L8 work (workspace `tk-hunt/README.md`, August
+recon, noted as empty stubs in guest view). Router config byte-identical in
+August (level3) and current (level8) shells: shared infrastructure, not
+L8-specific. No reference to Twilio/SMS/phone-numbers anywhere in the L8
+gate files (velo, page JSON, shell) beyond stock Wix boilerplate. OPEN:
+member-gated body content of the four persona pages — needs a logged-in
+read; if bodies are stubs too, close Twilio entirely.

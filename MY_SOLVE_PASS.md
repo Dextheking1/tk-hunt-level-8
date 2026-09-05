@@ -166,3 +166,17 @@ Two more preregistered families completed with byte-perfect controls. A
 forms missed. So did all 100,000,000 ordered pairs of the top 5,000 lowercase
 English words with empty/space/hyphen/underscore separators. This does not
 weaken the seed-mode carrier detection; it narrows the unresolved password.
+
+## Addendum 10: image07 seed becomes a password oracle
+Synthetic tracing and seven independent StegSeek controls establish the exact
+selector mapping: bytewise XOR the four 4-byte quarters of `MD5(passphrase)`
+and read the result little-endian. All seven passwords match, and `planet`
+matches across two covers. Target seed `0f58d719` can now reject passwords with
+one MD5 plus a 32-bit comparison; only fold collisions need full extraction.
+
+## Addendum 11: common three-word image07 passwords dead
+The validated MD5-fold oracle scanned all four billion ordered triples from the
+top 1,000 lowercase English words under empty/space/hyphen/underscore joining.
+The control recovered `thetimeyou`; independent C/Python fold samples matched.
+The target produced zero fold collisions, so this complete family cannot hold
+the image07 password.
