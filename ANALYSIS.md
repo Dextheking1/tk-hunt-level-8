@@ -1,5 +1,26 @@
 # Level 8 working notes
 
+## Official clue grid3_easier (2026-09-05) — see PREREG_GRID3_EASIER.md
+
+Author: "We removed some of the numbers you don't need." Verified reading:
+official 7×6 grid minus 5 cells (last row, cols 2–6) = digits `6 1 8 4 9`
+removed, 37 remain.
+
+- **KEY FINDING:** the removed 4-cell run `6 1 8 4` = **FAHD** (A=1..I=9) —
+  the UNIQUE position of that word-search junk hit. The author removed
+  precisely FAHD's cells (+adjacent 9) → the A=1..I=9 word search is the
+  author-relevant grid reading (P≈4.5e-5 for arbitrary removal; 1/7 if
+  last-row targeting).
+- KILLS (all controlled): T1 survivors = ACID CHEF FICA FIFE GEED = 5 junk
+  (≠3, no len≥5) — word-search refinement dead as answer producer. T2
+  37-digit multi-tap = chance (control 461/1000). T3 removed 61849 = no
+  word/phrase (61849=127×487). T4 removed digits = exactly the 5
+  non-primes, p=0.00423; prime-cell follow-up barren (0/1000 control).
+  T5 repo-wordlist survivors = 4 words ≠ 3 (frequency cut forbidden).
+  T6 no planted glyph markers (1/5 size-outlier; true outliers remain).
+- **No new answer candidate.** Queue unchanged: `call touch reach` ×6 →
+  `two zero seven`. Only remaining lock: image07 passphrase.
+
 ## COMPLETE MAP (2026-09-05) — see COMPLETE_MAP.md
 
 Consolidated inventory: grid.png (XMP/eXIf + 6-file ZIP, verified), image01
