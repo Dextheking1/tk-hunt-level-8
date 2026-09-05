@@ -49,3 +49,20 @@ synthetic `planet` decode. Calculate all 31 selector folds. If none equals
 `0f58d719`, kill the family without extraction. Any 32-bit fold match must be
 tried with ordinary Steghide twice; only successful, hash-identical extraction
 counts. No live-site request or submission is involved.
+
+## Results (executed 2026-09-05, arena branch — family was preregistered
+by swarm master but had no recorded result)
+
+- Fold control: `planet` -> 0x2c52fe1c. PASS.
+- All 31 frozen candidates computed (dedup preserved, 31 unique):
+  This Is It 12 case/joiner forms, Beat It 8, Michael Jackson 8, plus
+  thisIsIt / beatIt / michaelJackson. **ZERO folds equal 0f58d719.**
+- Extraction correctly skipped. Family KILLED per the registered
+  decision rule.
+- Visual re-check (arena, 2026-09-05): the second figure at the right
+  edge of image07 is a bandmate in a dark flat cap + black tee, head
+  down at a low instrument, on a red concert stage (drum kit left).
+  No Michael Jackson markers (no fedora, no white glove, no This-Is-It
+  rehearsal-studio setting). The "This Is It rehearsal" visual
+  hypothesis is rejected on independent visual grounds as well; the
+  family was dead on the fold before the visual check.

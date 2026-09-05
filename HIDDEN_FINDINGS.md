@@ -266,6 +266,53 @@ more brute force.
    Hit in USA" badge), 55 cover-text candidates zero; all 18 principled
    straight-line orders confirmed burned.
 
+## 2026-09-05 (evening, "keep solving" pass)
+
+7. **This Is It family EXECUTED + KILLED.** Ran the swarm's 31 frozen
+   forms (results appended to PREREG_IMAGE07_THIS_IS_IT_CASE.md):
+   planet fold control PASS (2c52fe1c), zero folds == 0f58d719 → dead
+   per the registered rule. Independent visual check of image07
+   (arena eyes): second figure = bandmate in dark flat cap + black tee
+   at a low instrument on a red CONCERT stage (drum kit left) — no MJ
+   markers, no rehearsal studio → the This-Is-It visual hypothesis is
+   rejected on sight too. image07 visual facts now: Orianthi (white
+   PRS w/ swirl decal, wide-brim black hat, white blouse, black skirt,
+   purple mic windscreen) + unidentifiable bandmate.
+8. **answer = passphrase hypothesis KILLED for the current queue.**
+   fold() tested on: all 6 perms of call/touch/reach, one seven nine,
+   two zero seven, + 12 digit/joiner variants (179, 207, one-seven-
+   nine, …) → none equals 0f58d719. Even if a queue candidate is the
+   live answer, it is not the image07 steghide passphrase. (Consistent
+   with the dead "puzzle triples" sweep; now explicit for the queue.)
+9. **Live guest reads (no submissions, reads only):**
+   - /level-0 = 404 — no L0 page exists (Q&A's "little hint for later"
+     is unrecoverable from the site; L0 surface closed).
+   - /tool = password-gated guest area ("Please enter the password
+     below. Go") — gate text confirmed; known member-gated
+     ("possible author decoder"); password unknown, never guess live.
+   - /qa: QUESTIONS (29) now (was 27). Two new threads: "What's
+     Timmy's favorite song?" (Noah Salvatore, today, **no admin
+     answer yet** — OPEN live data point, music-themed level) and
+     "mmmmmm banana" (Logan, 12h). Guest SSR window shows 11 threads
+     (newest→Nov 06); the remaining 18 (incl. "What does the number 1
+     represent?") are JS-paginated behind "Show more" — unreachable
+     from the sandbox (direct egress blocked; fetch returns text only)
+     → still a USER/OPERATOR browser action. No admin answer to the
+     digit-1 question in the guest window. Q&A background image =
+     Gird_Background.jpg (same asset the GIRD planting used).
+   - Admin token "questiclesdotnet" inside the Oct 22 "Security
+     Update" post = real D&D podcast wordplay (dragonquesticles.com),
+     joke/typo, not a puzzle string. Closed.
+10. **User-side action list (priority order) — the only remaining
+    unlock surfaces for image07:** (a) full Q&A scroll in the logged-in
+    browser → admin answer to "What does the number 1 represent?"
+    (decisive for the digit-1 layer); (b) bodies of the four /twilio/
+    {Ash,Aiden,Jess,Morgan} persona pages when logged in (stubs →
+    Twilio closed entirely); (c) /tool page password if ever seen
+    ("possible author decoder"); (d) watch for the admin's answer to
+    "What's Timmy's favorite song?"; (e) fire the queue if chosen:
+    call touch reach ×6 → one seven nine → two zero seven.
+
 ---
 
 # Appendix: swarm master HIDDEN_FINDINGS.md (97a61fb, union-merged 2026-09-05)
