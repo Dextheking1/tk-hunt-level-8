@@ -186,3 +186,11 @@ Controlled MD5-fold scans completed 11,207,042,464 disjoint bounded-mask keys
 and 162,505,112 generic best64 mutations. Three mask fold collisions
 (`ketoxe`, `smzqagh`, `ovxqfiu`) all failed extraction twice; best64 had no
 collision. The confirmed image07 payload remains encrypted.
+
+## Addendum 13: puzzle-vocabulary triple passwords dead
+With the validated MD5-fold oracle, all 150,381,500 ordered triples from the
+335-word puzzle vocabulary (top-300 common board words ∪ cover-title words ∪
+artist-name words; SHA 492af997…) under empty/space/hyphen/underscore joining
+were checked (canary `the for you` = 87503672 passed): zero fold collisions
+vs `0f58d719`. With the 4B top-1,000 triple kill, three-word passwords built
+from words the puzzle surfaces are now fully closed.

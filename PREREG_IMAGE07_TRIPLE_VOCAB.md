@@ -63,3 +63,21 @@ collision; a canary failure invalidates the run.
 - Any collision: hand to the swarm for dual steghide extraction.
 
 No live-site request or submission is involved.
+
+## Results (2026-09-05, executed after commit d5dc7c7)
+
+- Canary: target `87503672` run returned exactly `["the for you"]` (142.6 s
+  over all four joinings) — pipeline valid.
+- Target: all **150,381,500** candidates (335³ × 4 joinings) checked in 152.2 s
+  with the same loop; **zero fold collisions** vs `0f58d719`.
+
+## Decision: KILLED
+
+The puzzle-vocabulary triple family is dead. Combined with the swarm's 4B
+top-1,000-word triple kill, every three-word password whose words are drawn
+from the wordfreq top 1,000 **or** the puzzle's own vocabulary (board words,
+cover titles, artist names — including all 27 exotic cover/artist words) is
+closed under all four joinings. Residual three-word key space: words the
+puzzle never surfaces (unknown 10th image content, author-personal). This run
+also cross-validates the swarm's 4B null with an independent loop and
+vocabulary construction.

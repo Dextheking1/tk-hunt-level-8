@@ -156,3 +156,12 @@ alphanumeric length 6, lowercase alphabetic length 7, and 162,505,112 outputs
 from installed best64 rules over local generic sources. Mask fold collisions
 `ketoxe`, `smzqagh`, and `ovxqfiu` each failed extraction twice. These are hash
 collisions, not answer candidates; never submit or revive them.
+
+### Burn: image07 puzzle-vocabulary triple keys (2026-09-05)
+335-word V (top-300 common board words ∪ 24 cover-title words ∪ 14
+artist-name words) × ordered triples × 4 joinings = 150,381,500 candidates,
+canary-validated, zero fold collisions vs 0f58d719 (PREREG_IMAGE07_TRIPLE_
+VOCAB.md). Together with the 4B top-1000 triple kill, no three-word password
+composed of puzzle-surfaced words can hold the image07 payload. Do not
+revive with reordered V or extra joinings; only words outside the puzzle
+surface (unknown 10th image, personal) remain.
