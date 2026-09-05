@@ -357,3 +357,10 @@ hidden text. 113-fold micro-batch (first-letters, solver names, weekdays):
 zero hits. Top-2000-English triples scan (8B x empty/space joinings, closes
 the necklace/popcorn-depth gap) launched in background; hyphen/underscore
 remainder deferred. Result pending — see cache scan2000.done.
+
+## Addendum 31: first triples collision fails auth (2026-09-05)
+Scan emitted `hits answers might` (fold match, as expected ~4 random
+collisions over 16B candidates). `steghide extract` with it failed
+("invalid length", no output): random collision, not the password. Scan
+still running; further random collisions expected and meaningless without
+extraction.
