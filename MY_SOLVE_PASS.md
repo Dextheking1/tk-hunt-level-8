@@ -340,3 +340,12 @@ Digit-order strings (rows/cols/boustrophedons/spiral/diagonals + reverses,
 7,590 additional candidates via fold oracle (games, anime/VN titles,
 wrestling/magic-adjacent vocab, extended music terms, keyboard walks,
 classic passwords with mutations, months/days/colors): zero hits.
+
+## Addendum 29: visual check of remaining carriers (2026-09-05)
+Viewed image06 (Ghostbusters single cover: "Ray Parker Jr. GHOSTBUSTERS
+From the Soundtrack LP" + "Original No. 1 Hit in USA" badge) and image07
+(Orianthi visual-confirmed: white PRS with swirl decal, hat, no text).
+55 password candidates from the new cover text (numberone, soundtrack,
+rayparkerjr, hat, purple…): zero fold hits. Submit-order audit: all 18
+principled straight-line orders confirmed burned; only unprincipled
+remnants (HKT/HKST/mixed-family) never fired — left unfired deliberately.
