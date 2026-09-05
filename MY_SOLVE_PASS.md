@@ -314,3 +314,10 @@ concatenated, common wordlists, keyboard walks, classics. Well dry.
 image filenames with extensions, games/movies (tetris/boggle/bananagrams),
 call phrases — zero fold hits. Passphrase-from-images now fails at singles,
 pairs, triples, full titles, lyric lines, and composites.
+
+## Addendum 25: full rockyou exhausted (2026-09-05)
+Downloaded SecLists rockyou (14,344,391 passwords) and MD5-fold-filtered all
+of them against `0f58d719` (12-core pool): zero hits. Largest single
+untested family is now closed. Password space status: every motivated
+family exhausted; only unmotivated brute force (random masks beyond tested
+bounds) remains, parked per stopping rule.
