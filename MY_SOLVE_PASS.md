@@ -341,6 +341,14 @@ Digit-order strings (rows/cols/boustrophedons/spiral/diagonals + reverses,
 wrestling/magic-adjacent vocab, extended music terms, keyboard walks,
 classic passwords with mutations, months/days/colors): zero hits.
 
+## Addendum 29: carrier visuals closed + top-2000 triples launched (2026-09-05)
+All carriers now eyeballed: image12 = Reynolds/LOVELOUD stage (no text
+beyond shirt), steg04 and artist_hidden = standard single covers, no
+hidden text. 113-fold micro-batch (first-letters, solver names, weekdays):
+zero hits. Top-2000-English triples scan (8B x empty/space joinings, closes
+the necklace/popcorn-depth gap) launched in background; hyphen/underscore
+remainder deferred. Result pending — see cache scan2000.done.
+
 ## Addendum 29: visual check of remaining carriers (2026-09-05)
 Viewed image06 (Ghostbusters single cover: "Ray Parker Jr. GHOSTBUSTERS
 From the Soundtrack LP" + "Original No. 1 Hit in USA" badge) and image07
