@@ -212,3 +212,14 @@ would violate the preregistered stopping rule.
   true passphrase is still unknown. Per the stopping rule, no further brute
   force without a new clue; the last unopened live surface remains the
   Twilio member bodies.
+- Dispute adjudication (2026-09-05): a counter-claim argued the seed hit is
+  capacity-conflation. Decisive negatives run by me: full 2^32 `stegseek
+  --seed` on image02 and on a fresh synthetic JPEG both return "Could not
+  find a valid seed" (exit 1, no output). Scorecard: image04 HIT (correct
+  seed+metadata), image07 HIT (seed+metadata), image02/synth MISS. The
+  counter-agent's controls tested `steghide info` capacity, never seed mode
+  — strawman. The 88-vs-81.893 collision count was never payload evidence
+  (it was the failed crack); payload evidence is the seed+metadata, which
+  clean files do not produce. Prior note: image04's payload is ALSO
+  rijndael-128/CBC, so encryption-per-se is already author behavior; only a
+  non-empty passphrase would be new.
