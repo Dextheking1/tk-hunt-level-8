@@ -219,6 +219,53 @@ finite sweep scope per the preregistered stopping rule. Any further
 image07 work requires a new clue (payload content, member pages), not
 more brute force.
 
+## 2026-09-05 (post union-merge of swarm master 97a61fb)
+
+1. **homie/kelli/smelt ADJUDICATED — KILLED, no submission** (full
+   record: ADJUDICATION_HOMIE_KELLI_SMELT.md). Swarm GRID3_SOLVE.md
+   claims the easifier left "exactly three" T9 straight words and orders
+   firing all six orderings at 1/min. Verified: KELLI (col 1 vertical)
+   and SMELT (anti-diagonal) real; TILLS = col 4 vertical whose T sits
+   on removed cell (5,4) — the deletion does kill TILLS. BUT HOMIE (the
+   word making the count "3") is ABSENT from the frozen 72,870-word
+   dictionary → frozen-dict counts are 42-board = {KELLI,SMELT,TILLS}
+   (3), canonical 37-board = {KELLI,SMELT} (2) → "exactly 3" is a
+   dictionary artifact (post-hoc expansion, forbidden). 1,000-board
+   control: 42-board len-5 mean 4.70 (P(>=4)=0.626), 37-board mean 3.40;
+   observed pair (3,2) at chance. Independent kill: grid-word class is
+   DEAD by operator ruling T7 + user "ALL grid-word orders" rejects.
+   The six orders were never submitted (swarm Add.29 audit) — class
+   closed by ruling. Only user/operator may reopen.
+2. **image04 sub-thread RESOLVED (my-pipeline bug, not author keygen).**
+   Swarm PREREG_IMAGE07_RAW_CIPHERTEXT.md: StegSeek diagnostic seed-mode
+   raw recovery passed all 3 frozen controls; image04 blank-passphrase
+   decode reproduced hidden/steg04.jpg (= image11.jpg, 48,807 B)
+   byte-identical (sha256 7643d732…). Root cause of my 49-bit-oracle
+   failures at all offsets: steghide rijndael-128 uses a **32-byte key**
+   (MD5(pw) || MD5(MD5(pw)); steghide always uses the largest key size
+   for the algorithm) — my oracle used the 16-byte MD5 digest. Author
+   keygen is standard. Sub-thread closed; do not re-test "".
+3. **image07 raw ciphertext (swarm, control-valid):** seed 0f58d719 →
+   19,760 B = 16-B IV (e5777082fda3b3ff0054e56b6ce096f1) + 19,744 B
+   block-aligned ciphertext; entropy 7.9914; no unencrypted
+   filename/magic/checksum fields; printable runs at random-ciphertext
+   rate. Passphrase remains the sole blocker; mask expansion stays
+   disallowed (stopping rule intact).
+4. **GRID_CIPHERS.md (swarm): dcode grid-cipher family fully
+   exhausted** — monome-dinome 3,240-combo sweep dead; Nihilist sweep
+   dead by structural argument; all other families dead on missing
+   inputs (no symbols/taps/audio/alpha-text anywhere on the level);
+   images-as-keys dead inside the sweep.
+5. **Swarm image07 case families:** Orianthi title-case (According to
+   You, 13 frozen forms) KILLED — zero fold hits. This Is It / Beat It /
+   Michael Jackson (31 frozen forms) preregistered, **no result
+   recorded in their master** — second dark-clothed figure at the mic
+   is an unfalsified vision-model hypothesis.
+6. **Swarm Add.28/29:** 7,590-word broad sweep blank; image06 visual =
+   Ghostbusters single (Ray Parker Jr. soundtrack LP, "Original No. 1
+   Hit in USA" badge), 55 cover-text candidates zero; all 18 principled
+   straight-line orders confirmed burned.
+
 ---
 
 # Appendix: swarm master HIDDEN_FINDINGS.md (97a61fb, union-merged 2026-09-05)
