@@ -2,7 +2,7 @@ import hashlib,itertools,multiprocessing as mp,sys,time
 TGT=0x0f58d719
 words=[l.strip() for l in open('/home/beni/.cache/tk-scan/google-10000.txt') if l.strip().isalpha() and l.strip().isascii()][:2000]
 W=[w.encode() for w in words]
-SEPS=[b'',b' ']
+SEPS=[b'-',b'_']
 def shard(a0):
     out=[]
     for a in range(a0[0],a0[1]):
