@@ -253,3 +253,14 @@ old lowercase searches: 13 conventional case/joiner forms of *According to
 You*. This family was preregistered before hashing. The `planet` fold and exact
 synthetic decode controls passed; all 13 target folds missed `0f58d719`.
 No extraction was attempted and no candidate survives.
+
+## Addendum 18: phrase-shaped passwords exhausted (2026-09-05)
+Steelmanning the combinator suggestion into its complete form: all ordered
+pairs and triples of the 426 unique-5 grid words (77.3M triples) and the 91
+madworld words, under empty/space/hyphen/underscore joining — full space,
+not a head-truncated sample — fold-scanned against `0f58d719`: zero
+collisions. (The proposed hashcat one-liner as written mangles single words
+only and cannot emit triples; this run is the correct implementation of its
+intent.) Phrase-shaped passwords from grid/cover vocabulary are closed. The
+image07 password is outside every tested family; parked per stopping rule
+pending a new clue (Twilio member bodies remain the last unopened surface).
