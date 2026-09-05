@@ -123,3 +123,13 @@ author's canonical grid (37 cells), but produces NO new answer candidate.
 Answer queue unchanged (`call touch reach` ×6 perms → `two zero seven`);
 no live submission. The only remaining puzzle lock stays image07's
 passphrase.
+
+### T7 — OPERATOR RULING (2026-09-05): word-search survivor class DEAD
+
+Operator: the answer is not the word-search direction ("I dont think its
+gonna be that"); the grid-word class was already submitted and rejected in
+prior rounds (all grid-word orders killed), so none of the five survivors
+(ACID CHEF FICA FIFE GEED) or any combo of them will be submitted.
+No live interaction. The clue's residual value: the 37-cell canonical
+grid + removed-cell exclusion remain valid constraints for any future
+non-word-search mechanism.

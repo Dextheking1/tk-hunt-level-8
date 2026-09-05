@@ -18,6 +18,10 @@ removed, 37 remain.
   non-primes, p=0.00423; prime-cell follow-up barren (0/1000 control).
   T5 repo-wordlist survivors = 4 words ≠ 3 (frequency cut forbidden).
   T6 no planted glyph markers (1/5 size-outlier; true outliers remain).
+- **OPERATOR RULING:** word-search survivor class DEAD — grid-word
+  answers already rejected in prior rounds (all orders killed); no survivor
+  or combo will be submitted. Clue residual value: canonical 37-cell grid +
+  removed-cell exclusion for any future non-word-search mechanism.
 - **No new answer candidate.** Queue unchanged: `call touch reach` ×6 →
   `two zero seven`. Only remaining lock: image07 passphrase.
 
