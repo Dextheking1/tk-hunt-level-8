@@ -304,11 +304,6 @@ phone numbers (5552368 Ghostbusters, 8675309 Jenny), area codes (416, 310,
 overseer), meta-tool words (rijndael, steghide, seed, payload), seed/IV
 strings, Twilio/Discord names. Images mined dry at password depth.
 
-## Addendum 28: broad vocabulary sweep blank (2026-09-05)
-7,590 additional candidates via fold oracle (games, anime/VN titles,
-wrestling/magic-adjacent vocab, extended music terms, keyboard walks,
-classic passwords with mutations, months/days/colors): zero hits.
-
 ## Addendum 23: scattershot password batch blank (2026-09-05)
 2,908 fresh candidates via fold oracle, zero hits: page IDs, Velo strings,
 Utah/sea/mythology vocab, file sizes, missing-slot numbers, prior answers
@@ -340,3 +335,8 @@ Digit-order strings (rows/cols/boustrophedons/spiral/diagonals + reverses,
 - 289 easifier-derived passwords via fold oracle (easier/grid3/removed,
   removed-cell digits, kept stub, clue words, all six K-order concatenations,
   discord IDs, webp): zero hits.
+
+## Addendum 28: broad vocabulary sweep blank (2026-09-05)
+7,590 additional candidates via fold oracle (games, anime/VN titles,
+wrestling/magic-adjacent vocab, extended music terms, keyboard walks,
+classic passwords with mutations, months/days/colors): zero hits.
