@@ -141,3 +141,28 @@ known Level-0 snippet, no calibratable convention, TOOL effectively empty.
 Every known surface is now exhausted: grid, images, forensics, page, video,
 TOOL, QA, L6/L7, retro (joke). Residuals only: steghide passphrases on
 image02/06/07/12, missing slots 03/05/08/09/10, TEST/twilio/winner stubs.
+
+## Addendum 7: complete StegSeek seed scan finds image07 payload
+A preregistered full 2^32 seed-mode test, with known-positive image04 and a
+fresh negative JPEG, closed the interrupted earlier seed scans. Controls passed.
+image02/image06/image12 completed with no seed. **image07 reproducibly reports
+seed `0f58d719`, 19.3 KB compressed plaintext, rijndael-128/CBC.** This is new
+hard evidence of another encrypted steghide payload; it is not an outguess
+false positive. Seed mode cannot extract encrypted bytes without the password.
+The repo-corpus 1,758,842-password sweep also missed, so cracking image07 is now
+the sole high-value forensic lead.
+
+## Addendum 8: image07 finite short-key families dead
+Preregistered controls and full scans passed. Seed-derived forms (594), every
+lowercase a-z string of length 1–6 (321,272,406), and every decimal string of
+length 1–8 including leading zeroes (111,111,110) all failed on image07. The
+controls independently recovered `planet` and `8675309` byte-perfectly. Thus
+the confirmed payload remains encrypted; its key is longer, mixed-character,
+or otherwise outside every mechanically justified key family tested so far.
+
+## Addendum 9: generic image07 passwords and common pairs dead
+Two more preregistered families completed with byte-perfect controls. A
+7,140,015-entry union of local generic passwords/dictionary/word-frequency
+forms missed. So did all 100,000,000 ordered pairs of the top 5,000 lowercase
+English words with empty/space/hyphen/underscore separators. This does not
+weaken the seed-mode carrier detection; it narrows the unresolved password.
