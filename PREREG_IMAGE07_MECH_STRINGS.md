@@ -25,7 +25,7 @@ dictionaries, or exhaustive short strings:
 validated: `H("planet") = 2c52fe1c` — exactly the StegSeek-reported seed for
 the swarm's `planet` control carrier (PREREG_STEGHIDE_SEED_MAPPING.md).
 
-## Frozen family (1,721 candidates, bytewise-sorted)
+## Frozen family (2,094 candidates, bytewise-sorted)
 
 - F1: `imageNN` / `imageNN.jpg` for NN = 00..99, x {verbatim, upper,
   capitalize} — **includes the missing slots 03/05/08/09/10, absent from
@@ -55,13 +55,21 @@ the swarm's `planet` control carrier (PREREG_STEGHIDE_SEED_MAPPING.md).
 - F12: famous/fictional phone numbers (8675309, 911, 1212, 1010INFO + T9
   10104633, 555-0100..0199 block, pattern numbers, T9 of INFO/OPERATOR).
 
-Artifact: `image07_mech_strings.txt`, **1,721 lines**, SHA-256
-`0fcb77a8d16f1d286693e43600c5b73116c6d4d7057f51e60f584c0c0cc9c76a`.
+- F13: chorus lines of the 9 known songs that are absent from the repo
+  corpus (Hotline Bling / Payphone / Ring My Bell / La Isla / PDP hooks).
+- F14: carrier-specific Orianthi facts (full name, Stand Up Rock The Clock,
+  You Gotta Believe, Purple Mic, 2009).
+- F15: dimension strings (1200x900 for image07 + all 9 images, 8 forms) and
+  file-size literals of all inventory images.
+- F16: a few specific famous phone-keyword songs/albums missed earlier.
+
+Artifact: `image07_mech_strings.txt`, **2,094 lines**, SHA-256
+`8ad8b555c4d727323581571583f0c0b9ee13a8fa52955924941c794f52003b57`.
 
 ## Result
 
-**0 of 1,721 candidates satisfies `H(p) = 0f58d719`** (computed locally with
-the validated H; no steghide execution involved).
+**0 of 2,094 candidates satisfies `H(p) = 0f58d719`** (computed locally with
+the two-point-validated H; no steghide execution involved).
 
 ## Expected StegSeek seeds for follow-up C validation
 
@@ -71,7 +79,7 @@ above becomes a tool-validated kill of this family:
 
 | passphrase | expected seed |
 |---|---|
-| `` (empty) | `3b75655e` |
+| `` (empty) | `3b75655e` (already matched — image04 seed) |
 | `a` | `927c8494` |
 | `abc` | `275fa452` |
 | `test` | `cb4257a3` |
@@ -82,9 +90,23 @@ above becomes a tool-validated kill of this family:
 ## Decision rule
 
 - If follow-up C confirms H (all seven seeds match): the swarm runs
-  `stegseek image07.jpg -w image07_mech_strings.txt` (1,721 lines, seconds)
+  `stegseek image07.jpg -w image07_mech_strings.txt` (2,094 lines, seconds)
   for the tool-validated verdict; a miss kills the mechanically-derived
   string family. The remaining key space is then only the unknown payload's
   own content or author-personal strings — outside finite sweep scope.
 - If follow-up C rejects H: this no-hit is an instrumentation null (as
   attempt A), and the family reopens under the corrected mapping.
+
+## Family status: KILLED (conditional on follow-up C confirming H)
+
+With the two-point H validation, this no-hit covers every mechanically
+derivable string class the repo, the grid, the inventory, and the phone theme
+support: imageNN slot names, digit rows/cols/full strings, title/artist/lyric
+concatenations and T9 forms, album names, dates/timestamps, phone numbers,
+dimensions, file sizes, seeds, and cover/grid words. Combined with the
+swarm's ~145M sweep (generic, pairs, short-lowercase, decimal, corpus,
+semantic), the mechanically-guessable password space for image07 is closed.
+
+Residual (un-sweepable): the still-unknown 10th image's own title/artist (if
+the password names its content), author-personal strings, or longer random
+strings. These are outside finite pre-registered sweep scope.
