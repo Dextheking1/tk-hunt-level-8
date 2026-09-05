@@ -322,6 +322,13 @@ untested family is now closed. Password space status: every motivated
 family exhausted; only unmotivated brute force (random masks beyond tested
 bounds) remains, parked per stopping rule.
 
+## Addendum 27: easier-grid surfaces closed (2026-09-05, goal work)
+- `grid3_easier.webp` forensics: single VP8L chunk, zero trailing bytes, no
+  EXIF/XMP/ICCP. Clean (Discord re-encodes uploads anyway). No hidden layer.
+- 289 easifier-derived passwords via fold oracle (easier/grid3/removed,
+  removed-cell digits, kept stub, clue words, all six K-order concatenations,
+  discord IDs, webp): zero hits.
+
 ## Addendum 26: post-easifier leftovers dead (2026-09-05)
 Sudoku-shape readings die on dimensions (6x7 with repeats, not 9x9).
 A1Z26 straight lines rerun on the REDUCED grid: zero words len>=5.
